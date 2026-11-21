@@ -1,0 +1,3 @@
+This app, its files and its content belong to Kerbside Cuts Barbers (demo).
+The shop may copy, change, host or hand it to anyone it chooses. No licence fee is due to HVT Innovations to keep using it.
+The code inside is standard Python and JavaScript with no outside libraries.

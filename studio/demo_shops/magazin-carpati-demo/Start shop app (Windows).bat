@@ -1,0 +1,5 @@
+@echo off
+cd /d "%~dp0"
+start "" "http://localhost:8080/admin"
+python server.py
+pause

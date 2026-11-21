@@ -1,0 +1,163 @@
+{
+ "name": "Halawiyat Al-Sham (demo)",
+ "tagline": {
+  "ar": "حلويات شرقية طازجة كل يوم",
+  "en": "Fresh Middle Eastern sweets, every day"
+ },
+ "languages": [
+  "ar",
+  "en"
+ ],
+ "default_language": "ar",
+ "colours": {
+  "primary": "#0B6E4F",
+  "accent": "#C8A951",
+  "bg": "#FBF5E9",
+  "text": "#20160C"
+ },
+ "hours": [
+  {
+   "day": "mon",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "tue",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "wed",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "thu",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "fri",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "sat",
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "day": "sun",
+   "open": "12:00",
+   "close": "22:00",
+   "closed": false
+  }
+ ],
+ "hours_note": {},
+ "address": "Demo address (not a real shop), Harrow",
+ "postcode": "HA3 5AA",
+ "phone": "07700 900456",
+ "whatsapp": "+447700900456",
+ "announcement": {
+  "ar": "تجريبي — أسعار للعرض فقط، ليس متجراً حقيقياً.",
+  "en": "DEMO — example prices, not a real shop."
+ },
+ "announcement_on": true,
+ "products": [
+  {
+   "id": "p1",
+   "name": {
+    "ar": "بقلاوة بالفستق",
+    "en": "Pistachio baklava"
+   },
+   "price": "12.00",
+   "unit": "500 g",
+   "category": "Baklava",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p2",
+   "name": {
+    "ar": "كنافة نابلسية",
+    "en": "Nabulsi kunafa"
+   },
+   "price": "4.50",
+   "unit": "1 slice",
+   "category": "Kunafa",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p3",
+   "name": {
+    "ar": "معمول بالتمر",
+    "en": "Date maamoul"
+   },
+   "price": "6.00",
+   "unit": "12 pieces",
+   "category": "Biscuits",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p4",
+   "name": {
+    "ar": "بسبوسة",
+    "en": "Basbousa (semolina cake)"
+   },
+   "price": "3.00",
+   "unit": "1 piece",
+   "category": "Cakes",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p5",
+   "name": {
+    "ar": "علبة هدية مشكلة",
+    "en": "Mixed gift box"
+   },
+   "price": "25.00",
+   "unit": "1 kg",
+   "category": "Gifts",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  }
+ ],
+ "currency": "GBP",
+ "features": {
+  "whatsapp_order": true,
+  "pay_links": true,
+  "barcode_lookup": false
+ },
+ "demo": true,
+ "made_with": "Built with HVT Foundry Studio (HVT Innovations). This app and its content belong to the shop.",
+ "dir": {
+  "ar": "rtl",
+  "en": "ltr"
+ },
+ "lang_names": {
+  "ar": "العربية",
+  "en": "English"
+ },
+ "map_url": "https://www.openstreetmap.org/search?query=Demo%20address%20%28not%20a%20real%20shop%29%2C%20Harrow%2C%20HA3%205AA",
+ "logo": "",
+ "built_at": "2026-09-26T08:53:43+01:00"
+}

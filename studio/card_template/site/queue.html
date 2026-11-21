@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queue board</title>
+<style>
+:root{--p:#141414;--a:#E63B2E;--fd:Impact,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--p);color:#fff;font-family:system-ui,sans-serif;display:flex;flex-direction:column;overflow:hidden}
+.bg{position:fixed;inset:0;background:url(img/pattern.svg) center/cover;opacity:.14;pointer-events:none}
+header{position:relative;display:flex;justify-content:space-between;align-items:center;padding:2.2vh 4vw;border-bottom:4px solid var(--a)}
+h1{font-family:var(--fd);font-size:clamp(28px,4.5vw,64px);margin:0;text-transform:uppercase;letter-spacing:.02em}
+.clock{font-size:clamp(22px,3.5vw,48px);font-weight:800;font-variant-numeric:tabular-nums}
+main{position:relative;flex:1;display:grid;grid-template-columns:1.25fr 1fr;gap:3vw;padding:3vh 4vw}
+@media(max-width:800px){main{grid-template-columns:1fr}}
+h2{font-size:clamp(16px,2vw,28px);text-transform:uppercase;letter-spacing:.2em;color:var(--a);margin:0 0 2vh}
+.serve{display:grid;gap:2vh}
+.tile{background:#fff;color:var(--p);border-radius:18px;padding:2.4vh 2vw;display:flex;align-items:center;gap:2vw}
+.tile .no{font-family:var(--fd);font-size:clamp(48px,8vw,130px);line-height:.9;color:var(--a)}
+.tile .nm{font-size:clamp(22px,3vw,48px);font-weight:900}
+.tile .ch{font-size:clamp(14px,1.6vw,24px);opacity:.7;font-weight:700}
+.tile.called{animation:flash 1s 6}
+@keyframes flash{50%{background:var(--a);color:#fff}}
+.next{list-style:none;margin:0;padding:0;display:grid;gap:1.2vh}
+.next li{display:flex;gap:1.5vw;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:1.4vh 1.4vw;font-size:clamp(18px,2.2vw,36px);font-weight:800}
+.next li b{font-family:var(--fd);color:var(--a);min-width:3.2ch}
+.next li small{margin-inline-start:auto;font-size:.55em;opacity:.7}
+.next li:first-child{background:var(--a);border-color:var(--a)}
+.next li:first-child b{color:#fff}
+.stats{display:flex;gap:3vw;margin-top:3vh}
+.stat b{display:block;font-family:var(--fd);font-size:clamp(40px,6vw,96px);line-height:1}
+.stat span{opacity:.8;font-weight:700}
+footer{position:relative;padding:1.6vh 4vw;font-size:clamp(12px,1.4vw,20px);opacity:.85;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.demo{background:#ffd84d;color:#111;font-weight:900;text-align:center;padding:6px;letter-spacing:.08em;position:relative}
+.empty{opacity:.6;font-size:clamp(18px,2vw,30px)}
+.closed{font-size:clamp(24px,3vw,48px);font-weight:900;color:var(--a)}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div id="demo"></div>
+<header><h1 id="nm">Queue</h1><div class="clock" id="clock"></div></header>
+<main>
+  <div><h2>Now serving</h2><div class="serve" id="serve"></div></div>
+  <div><h2>Next up</h2><ul class="next" id="next"></ul>
+    <div class="stats"><div class="stat"><b id="wc">0</b><span>waiting</span></div><div class="stat"><b id="ew">0</b><span>min est. wait</span></div></div></div>
+</main>
+<footer><span id="join"></span><span id="chk"></span><span>Board updates every 5 seconds · names shown are first names or initials only</span></footer>
+<script>
+"use strict";
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let seen = new Set(), last = "", shopClock = "";
+async function tick() {
+  try {
+    const b = await (await fetch("/api/queue/board", { cache: "no-store" })).json();
+    document.getElementById("serve").innerHTML = b.now_serving.length ? b.now_serving.map(n => `<div class="tile ${seen.has(n.no) ? "" : "called"}"><div class="no">${esc(n.no)}</div><div><div class="nm">${esc(n.name)}</div><div class="ch">${esc(n.chair ? "with " + n.chair : "")}</div></div></div>`).join("") : `<div class="empty">Chairs free — walk right in.</div>`;
+    b.now_serving.forEach(n => seen.add(n.no));
+    document.getElementById("next").innerHTML = b.open ? (b.next.map(n => `<li><b>${esc(n.no)}</b>${esc(n.name)}<small>${esc(n.barber)}${n.about ? " · about " + esc(n.about) : ""}</small></li>`).join("") || `<li class="empty" style="background:none;border:0">Nobody waiting</li>`) : `<li class="closed" style="background:none;border:0">Queue closed for now</li>`;
+    document.getElementById("wc").textContent = b.waiting_count;
+    document.getElementById("ew").textContent = b.estimated_wait_minutes;
+    last = b.checked_at || ""; if (last) { shopClock = last.slice(11, 16); document.getElementById("clock").textContent = shopClock; } document.getElementById("chk").textContent = last ? "Checked " + last.slice(11, 16) : "";
+  } catch (e) { document.getElementById("chk").textContent = "Board offline - last checked " + (last ? last.slice(11, 16) : "never") + ". Check the shop computer."; }
+}
+(async () => {
+  try { const c = await (await fetch("content.json")).json();
+    document.documentElement.style.setProperty("--p", c.colours.primary); document.documentElement.style.setProperty("--a", c.colours.accent);
+    document.documentElement.style.setProperty("--fd", c.fonts.display); document.getElementById("nm").textContent = c.name + " · Walk-ins";
+    if (c.demo) document.getElementById("demo").innerHTML = `<div class="demo">DEMO — invented business for illustration${c.demo_note ? " · " + esc(c.demo_note) : ""}</div>`;
+    document.getElementById("join").textContent = "Join from your phone: " + location.host + "/#queue";
+  } catch (e) {}
+  const clock = () => { if (!shopClock) document.getElementById("clock").textContent = new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }); };   // the shop's own clock once the board answers
+  clock(); setInterval(clock, 10000); tick(); setInterval(tick, 5000);
+})();
+</script>
+</body>
+</html>

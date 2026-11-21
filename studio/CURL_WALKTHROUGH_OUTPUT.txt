@@ -1,0 +1,37 @@
+# curl walkthrough — 2026-09-25 23:53 BST
+== 1. Boot the kernel
+ok=True  0:refused, 1:pass, 2:pass, 3:pass, 3:refused, 4:pass, 4:refused
+== 2. Open a session (BUT-0001)
+SES-0004  review: pending_human_review
+== 3. Owner corrects classification
+owner-corrected
+== 4. Run configurator (2-5 staff, £0-50, Basic)
+SES-0004/P1: engines=['ENG-0001', 'ENG-0002', 'ENG-0003'] | tools=[('Stripe', 'partly', 'fits'), ('Square', 'partly', 'fits'), ('Google Calendar', 'partly', 'fits'), ('Apple Calendar', 'partly', 'fits'), ('WhatsApp Business', 'partly', 'fits'), ('Xero', 'partly', 'fits'), ('QuickBooks', 'unverified', 'unknown'), ('Apple Pay', 'partly', 'fits')]
+== 5. Owner rejects, then accepts
+SES-0004/R1
+SES-0004/R2 pending_human_review
+== 6. Capture three wishes
+WSH-0002 WSH-0003 WSH-0004
+== 7. Empty wish is refused
+A wish needs the owner's own words.
+== 8. Close session
+Closed
+== 9. Wish after close is refused
+SES-0004 is Closed. Closed sessions are permanent records; open a follow-up session instead.
+== 10. Review queue
+['WSH-0002', 'WSH-0003', 'WSH-0004']
+== 11. Resolve: reconfigure / engine search / out of scope
+Configured via resolve_wish
+Engine Search Required via run_engine_search WSH-0003/ES1
+Under Review / Out of scope for now (still logged): Accounting is done by the owner in Xero/QuickBooks
+== 12. Session is now
+Actioned
+== 13. Offer new configuration (follow-up session)
+SES-0005
+== 14. Wish history (nothing deleted)
+[(1, 'Logged', None), (2, 'Configured', 'WSH-0002 rev 1'), (3, 'Accepted', 'WSH-0002 rev 2')]
+== 15. Authority tests
+ceo_captures_wish refused=True
+architect_amends_constitution refused=True
+== 16. Audit
+studio events=17 (refused=2), kernel entries=33

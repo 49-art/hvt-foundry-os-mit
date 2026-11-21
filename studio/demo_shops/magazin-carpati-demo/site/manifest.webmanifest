@@ -1,0 +1,26 @@
+{
+ "name": "Magazin Carpați (demo)",
+ "short_name": "Magazin Carp",
+ "lang": "ro",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#FFF8E7",
+ "theme_color": "#002B7F",
+ "description": "Gusturi de acasă, în Harrow",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

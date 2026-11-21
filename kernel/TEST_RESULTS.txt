@@ -1,0 +1,98 @@
+$ (cd kernel && python3 demo_boot.py)
+HVT Foundry Kernel (HVT-0005) — boot sequence demo
+============================================================
+
+[0] Pre-check: try to load the graph BEFORE the Constitution (must refuse)
+    REFUSED (expected): Object graph load refused: the Constitution has not been loaded.
+
+[1] Gate 1 — Load the Constitution
+    OK: HVT-0001 'HVT Foundry Constitution' v1.2 — status Approved
+
+[2] Gate 2 — Load the Object Graph
+    OK: 72 objects. ENG-0003 reuse_count (derived) = 4
+    BUT-0001 Hair Salon recommended engines: ['ENG-0001', 'ENG-0002', 'ENG-0003']
+    PRB-0004 Manual stock — engines that solve it: none (capability gap; see HVT-0006-OVL-0001)
+    WSH-0001 status: Configured — Configured (awaiting owner plan: Square vs sheet)
+
+[3] Gate 3 — Register Agents (only the two rows in HVT-0002 §4.2)
+    OK: AGT-0001 CEO Agent → CEO Office
+    OK: AGT-0002 Chief Architect → Architecture Office
+
+[3b] REFUSAL PATH 1 — try to register a non-Agent object (ENG-0003 Commerce Engine)
+    REFUSED (expected): Refused: ENG-0003 is class 'Engine', not 'Agent'. Only Agent-class objects may be registered (HVT-0002 §4).
+
+[4] Gate 4 — Execute an authorized workflow
+    OK: Chief Architect ran 'run_engine_search' — authorized by HVT-0002 v0.2 §4.2 (Draft): “Run Engine Search”
+    Result status: pending_human_review  (Output is not authoritative until a qualified human accepts, rejects, or amends it (HVT-0001 Art. IV.2.c, IV.3).)
+
+[4b] REFUSAL PATH 2 — Chief Architect tries to approve a Constitution amendment
+    REFUSED (expected): Workflow refused: Chief Architect (Architecture Office) is not authorized to 'approve_constitution_amendment'. Per HVT-0002 v0.2 §4.2 (Draft) that belongs to another Office. Failing closed.
+
+Audit log
+------------------------------------------------------------
+  2026-09-25T22:53:10+00:00  boot_order           refused  Object graph load refused: the Constitution has not been loaded.
+  2026-09-25T22:53:10+00:00  constitution         ok       HVT-0001 v1.2 loaded (status Approved).
+  2026-09-25T22:53:10+00:00  graph                ok       72 objects loaded from foundry_graph.json.
+  2026-09-25T22:53:10+00:00  agent_registration   ok       AGT-0001 (CEO Agent) registered to CEO Office.
+  2026-09-25T22:53:10+00:00  agent_registration   ok       AGT-0002 (Chief Architect) registered to Architecture Office.
+  2026-09-25T22:53:10+00:00  agent_registration   refused  Refused: ENG-0003 is class 'Engine', not 'Agent'. Only Agent-class objects may be registered (HVT-0002 §4).
+  2026-09-25T22:53:10+00:00  workflow_authority   ok       Chief Architect performed run_engine_search; output pending human review.
+  2026-09-25T22:53:10+00:00  workflow_authority   refused  Workflow refused: Chief Architect (Architecture Office) is not authorized to 'approve_constitution_amendment'. Per HVT-0002 v0.2 §4.2 (Draft) that belongs to another Office. Failing closed.
+
+Boot complete. 8 audit entries, 3 refusals (3 expected).
+
+$ python3 -m pytest kernel/test_kernel.py studio/test_studio.py -v
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/.hvt_venv/bin/python
+rootdir: /workspace/hvt_foundry
+collecting ... collected 47 items
+
+kernel/test_kernel.py::test_01_real_constitution_loads_and_is_approved PASSED [  2%]
+kernel/test_kernel.py::test_02_draft_constitution_refuses_boot PASSED    [  4%]
+kernel/test_kernel.py::test_03_wrong_document_id_refused PASSED          [  6%]
+kernel/test_kernel.py::test_04_missing_constitution_file_refused PASSED  [  8%]
+kernel/test_kernel.py::test_05_graph_refused_before_constitution PASSED  [ 10%]
+kernel/test_kernel.py::test_06_real_graph_loads_after_constitution PASSED [ 12%]
+kernel/test_kernel.py::test_07_duplicate_ids_refused PASSED              [ 14%]
+kernel/test_kernel.py::test_08_dangling_relationship_refused PASSED      [ 17%]
+kernel/test_kernel.py::test_09_bad_status_vocabulary_and_stored_reuse_count_refused PASSED [ 19%]
+kernel/test_kernel.py::test_10_agent_registration_refused_before_graph PASSED [ 21%]
+kernel/test_kernel.py::test_11_registered_agents_are_the_hvt0002_rows PASSED [ 23%]
+kernel/test_kernel.py::test_12_non_agent_registration_refused PASSED     [ 25%]
+kernel/test_kernel.py::test_13_unknown_object_registration_refused PASSED [ 27%]
+kernel/test_kernel.py::test_14_workflow_refused_before_any_agent_registered PASSED [ 29%]
+kernel/test_kernel.py::test_15_authorized_workflow_runs_but_is_never_authoritative PASSED [ 31%]
+kernel/test_kernel.py::test_16_workflow_outside_office_authority_refused PASSED [ 34%]
+kernel/test_kernel.py::test_17_ceo_agent_can_approve_governance_document_only_as_pending_review PASSED [ 36%]
+kernel/test_kernel.py::test_18_unknown_action_refused PASSED             [ 38%]
+kernel/test_kernel.py::test_19_every_refusal_is_audited PASSED           [ 40%]
+kernel/test_kernel.py::test_20_derived_reuse_count_matches_hvt0003 PASSED [ 42%]
+kernel/test_kernel.py::test_21_but0001_pilot_path_end_to_end PASSED      [ 44%]
+kernel/test_kernel.py::test_22_held_and_rejected_engines_are_not_registered PASSED [ 46%]
+kernel/test_kernel.py::test_23_parse_header_handles_flattened_pdf_form PASSED [ 48%]
+kernel/test_kernel.py::test_24_extension_adds_action_only_to_named_office PASSED [ 51%]
+kernel/test_kernel.py::test_25_extension_cannot_invent_office_or_redefine_core_action PASSED [ 53%]
+kernel/test_kernel.py::test_26_core_behaviour_unchanged_without_extension PASSED [ 55%]
+studio/test_studio.py::test_boot_runs_four_gates_and_three_refusals PASSED [ 57%]
+studio/test_studio.py::test_boot_fails_closed_with_draft_constitution PASSED [ 59%]
+studio/test_studio.py::test_open_session_mints_ids_after_reserved_ones PASSED [ 61%]
+studio/test_studio.py::test_open_session_refuses_non_business_type PASSED [ 63%]
+studio/test_studio.py::test_owner_correction_overrides_and_keeps_history PASSED [ 65%]
+studio/test_studio.py::test_unlisted_business_gives_honest_empty_configuration PASSED [ 68%]
+studio/test_studio.py::test_configurator_uses_only_graph_data_for_hair_salon PASSED [ 70%]
+studio/test_studio.py::test_unverified_vendor_facts_are_flagged_not_hidden PASSED [ 72%]
+studio/test_studio.py::test_budget_filter_uses_verified_prices_and_size_tech_are_not_faked PASSED [ 74%]
+studio/test_studio.py::test_card_summary_type_shows_gaps_honestly PASSED [ 76%]
+studio/test_studio.py::test_invalid_sizing_value_refused PASSED          [ 78%]
+studio/test_studio.py::test_plain_package_and_owner_response_is_not_a_foundry_approval PASSED [ 80%]
+studio/test_studio.py::test_wish_keeps_owner_words_verbatim_and_requires_words PASSED [ 82%]
+studio/test_studio.py::test_closed_session_is_permanent PASSED           [ 85%]
+studio/test_studio.py::test_return_path_three_outcomes_nothing_deleted PASSED [ 87%]
+studio/test_studio.py::test_follow_up_offers_new_configuration_and_carries_owner_answer PASSED [ 89%]
+studio/test_studio.py::test_every_action_is_kernel_checked_and_refusals_are_logged PASSED [ 91%]
+studio/test_studio.py::test_state_persists_across_restart PASSED         [ 93%]
+studio/test_studio.py::test_studio_never_writes_governance_or_graph PASSED [ 95%]
+studio/test_studio.py::test_http_full_loop PASSED                        [ 97%]
+studio/test_studio.py::test_http_refusals_have_codes PASSED              [100%]
+
+============================== 47 passed in 1.18s ==============================

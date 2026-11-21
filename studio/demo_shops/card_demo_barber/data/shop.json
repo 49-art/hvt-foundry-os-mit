@@ -1,0 +1,462 @@
+{
+ "card_id": "CARD-HAIR-01",
+ "card_version": "0.2",
+ "variant": "barber",
+ "staff_word": "Barber",
+ "staff_word_plural": "Barbers",
+ "preset": "urban_barber",
+ "colours": {
+  "primary": "#141414",
+  "accent": "#E63B2E",
+  "bg": "#EDEBE7",
+  "text": "#111111",
+  "surface": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue Condensed', Impact, sans-serif",
+  "body": "'Helvetica Neue', Arial, system-ui, sans-serif"
+ },
+ "pattern": "stripes",
+ "radius": "4px",
+ "name": "Kerbside Cuts Barbers (demo)",
+ "tagline": {
+  "en": "Walk in or book - an invented barbershop for the demo",
+  "tr": "Demo berber - yalnızca gösterim",
+  "pl": "Fikcyjny barber - tylko demo"
+ },
+ "languages": [
+  "en",
+  "tr",
+  "pl"
+ ],
+ "default_language": "en",
+ "logo": "",
+ "hero_images": [
+  "img/bba0c3c3883bcf76.svg",
+  "img/cf8bd7efafd927d1.svg"
+ ],
+ "hours": [
+  {
+   "day": "mon",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "tue",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "wed",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "thu",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "fri",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "sat",
+   "open": "09:00",
+   "close": "20:00",
+   "closed": false
+  },
+  {
+   "day": "sun",
+   "open": "10:00",
+   "close": "16:00",
+   "closed": false
+  }
+ ],
+ "closed_dates": [],
+ "hours_note": {},
+ "address": "No real address - demo shop",
+ "postcode": "",
+ "lat": null,
+ "lon": null,
+ "phone": "07700 900789",
+ "whatsapp": "+447700900789",
+ "email": "",
+ "google_place_id": "",
+ "offer": {
+  "en": "(demo) Tuesday: kids cut + dad cut deal - example offer text"
+ },
+ "offer_on": true,
+ "instagram": "",
+ "tiktok": "",
+ "platform_links": {
+  "fresha": "",
+  "treatwell": "",
+  "booksy": ""
+ },
+ "policy_text": {},
+ "policy_required": false,
+ "policy_short": "",
+ "access_info": {},
+ "loyalty": {
+  "stamps_needed": 6,
+  "reward": "6th cut free (demo)"
+ },
+ "vouchers": {
+  "valid_months": 12,
+  "amounts": [
+   "20",
+   "40",
+   "60"
+  ],
+  "pay_link": ""
+ },
+ "walkin": {
+  "max_waiting": 20,
+  "default_minutes": 30
+ },
+ "booking": {
+  "slot_minutes": 10,
+  "buffer_minutes": 0,
+  "min_notice_minutes": 30,
+  "max_days_ahead": 21,
+  "hold_minutes": 10,
+  "late_cancel_hours": 24,
+  "no_show_grace_minutes": 15,
+  "deposit_after_no_shows": 1,
+  "patch_test_gap_hours": 48,
+  "long_service_minutes": 180,
+  "buffer_may_pass_closing": 1,
+  "reminder_hours": 24,
+  "no_show_deposit": "10"
+ },
+ "messages": {
+  "reminder": "",
+  "review": ""
+ },
+ "services": [
+  {
+   "id": "fade",
+   "name": {
+    "en": "Skin fade (demo)"
+   },
+   "category": "Cuts",
+   "duration_min": 40,
+   "price_from": "22",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [
+    "any"
+   ],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "sciss",
+   "name": {
+    "en": "Scissor cut (demo)"
+   },
+   "category": "Cuts",
+   "duration_min": 30,
+   "price_from": "18",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "beard",
+   "name": {
+    "en": "Beard shape-up (demo)"
+   },
+   "category": "Beard & shave",
+   "duration_min": 20,
+   "price_from": "12",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "shave",
+   "name": {
+    "en": "Hot towel shave (demo)"
+   },
+   "category": "Beard & shave",
+   "duration_min": 30,
+   "price_from": "20",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "combo",
+   "name": {
+    "en": "Fade + beard (demo)"
+   },
+   "category": "Cuts",
+   "duration_min": 55,
+   "price_from": "30",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "kids",
+   "name": {
+    "en": "Kids cut (demo)"
+   },
+   "category": "Kids",
+   "duration_min": 25,
+   "price_from": "14",
+   "price_note": {},
+   "audience": "children",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "design",
+   "name": {
+    "en": "Hair design / lines (demo)"
+   },
+   "category": "Extras",
+   "duration_min": 15,
+   "price_from": "5",
+   "price_note": {},
+   "audience": "anyone",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  }
+ ],
+ "staff": [
+  {
+   "id": "b1",
+   "name": "Demo Barber 1",
+   "role": {
+    "en": "Head barber (demo)"
+   },
+   "bio": {
+    "en": "Invented profile for the demo - fades and designs."
+   },
+   "specialities": [
+    "Fades",
+    "Designs"
+   ],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": true,
+   "breaks": [],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  },
+  {
+   "id": "b2",
+   "name": "Demo Barber 2",
+   "role": {
+    "en": "Barber (demo)"
+   },
+   "bio": {
+    "en": "Invented profile for the demo - beards and shaves."
+   },
+   "specialities": [
+    "Hot towel shave"
+   ],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": true,
+   "breaks": [],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  },
+  {
+   "id": "b3",
+   "name": "Demo Barber 3",
+   "role": {
+    "en": "Barber (demo)"
+   },
+   "bio": {
+    "en": "Invented profile - walk-ins only in this demo."
+   },
+   "specialities": [],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": false,
+   "breaks": [],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "id": "g1",
+   "image": "img/bba0c3c3883bcf76.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g2",
+   "image": "img/f008d357f0b724f9.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g3",
+   "image": "img/88a3f3568d28af5e.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g4",
+   "image": "img/f5ff6ba1959c3c97.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  }
+ ],
+ "before_after": [],
+ "reviews": [
+  {
+   "id": "r1",
+   "author": "Example review (demo)",
+   "stars": 5,
+   "text": "Invented text to show how reviews look. Not a real customer.",
+   "source": "demo - not a real review"
+  }
+ ],
+ "packages": [],
+ "products": [
+  {
+   "id": "p1",
+   "name": {
+    "en": "Matte clay 100ml (demo)"
+   },
+   "brand": "",
+   "size": "",
+   "price": "12",
+   "barcode": "",
+   "low_stock": 2,
+   "image": "img/7e62176f97375a7a.svg",
+   "pay_link": ""
+  },
+  {
+   "id": "p2",
+   "name": {
+    "en": "Beard oil 30ml (demo)"
+   },
+   "brand": "",
+   "size": "",
+   "price": "10",
+   "barcode": "",
+   "low_stock": 2,
+   "image": "img/82b68baf9d778515.svg",
+   "pay_link": ""
+  }
+ ],
+ "branches": [],
+ "modules": {
+  "hero": true,
+  "services": true,
+  "booking_request": false,
+  "staff": true,
+  "gallery": true,
+  "reviews": true,
+  "contact_bar": true,
+  "hours": true,
+  "map": true,
+  "offers": true,
+  "languages": true,
+  "install": true,
+  "admin": true,
+  "deposits": false,
+  "auto_booking": true,
+  "reminders": true,
+  "gcal": false,
+  "platform_links": false,
+  "loyalty": true,
+  "vouchers": false,
+  "packages": false,
+  "retail": true,
+  "walkin_queue": true,
+  "before_after": false,
+  "client_records": false,
+  "rota": true,
+  "review_requests": true,
+  "social_links": false,
+  "referrals": true,
+  "multi_branch": false,
+  "accessibility": false,
+  "policy": false,
+  "analytics": true,
+  "supplier_finder": true
+ },
+ "suppliers": [],
+ "deposit_provider": "",
+ "public_url": "",
+ "demo": true,
+ "demo_note": "Demo clock set to Sat 24 Oct 2026, 10:30. Bookings, queue and alerts are invented.",
+ "admin": {
+  "password_hash": "pbkdf2_sha256$240000$371d207e303781f479d268f6cf760d20$38a11d7a3e590a405dd9064169a6bb421aef46c78afd9b8919b337a93a6b9022"
+ },
+ "made_with": "Built with HVT Foundry Studio (HVT Innovations). This app and its content belong to the shop.",
+ "updated_at": "2026-10-19T00:17:54+01:00"
+}

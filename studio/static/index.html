@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14213d">
+<title>HVT Foundry Studio</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/boot" aria-label="HVT Foundry Studio home">
+    <span class="mark">HVT</span>
+    <span class="brand-text"><strong>Foundry Studio</strong><small>High-Street Tablet Design Loop</small></span>
+  </a>
+  <nav class="tabs" id="tabs">
+    <a href="#/boot" data-tab="boot">Boot</a>
+    <a href="#/sessions" data-tab="sessions">Sessions</a>
+    <a href="#/cards" data-tab="cards">Card apps</a>
+    <a href="#/find" data-tab="find">Find for my business</a>
+    <a href="#/connectors" data-tab="connectors">Connectors</a>
+    <a href="#/queue" data-tab="queue">Review queue <span class="count" id="qcount"></span></a>
+    <a href="#/audit" data-tab="audit">Audit log</a>
+    <a href="#/settings" data-tab="settings">Settings</a>
+    <a href="#/about" data-tab="about">About</a>
+  </nav>
+  <div class="kstatus" id="kstatus">Kernel…</div>
+</header>
+<div class="ribbon" id="ribbon">Prototype · every output is <b>pending human review</b> (HVT-0001 Art. IV)</div>
+<main id="view" tabindex="-1"></main>
+<div id="toasts" aria-live="polite"></div>
+<footer class="foot">HVT Foundry Studio · built on the Foundry Kernel (HVT-0005) and graph/foundry_graph.json · data only from the HVT Foundry record</footer>
+<script src="/app.js"></script>
+<script src="/find.js"></script>
+<script src="/cards.js"></script>
+</body>
+</html>

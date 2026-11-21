@@ -1,0 +1,177 @@
+{
+ "name": "Magazin Carpați (demo)",
+ "tagline": {
+  "ro": "Gusturi de acasă, în Harrow",
+  "en": "A taste of home, in Harrow"
+ },
+ "languages": [
+  "ro",
+  "en"
+ ],
+ "default_language": "ro",
+ "colours": {
+  "primary": "#002B7F",
+  "accent": "#FCD116",
+  "bg": "#FFF8E7",
+  "text": "#1B1B3A"
+ },
+ "hours": [
+  {
+   "day": "mon",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "tue",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "wed",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "thu",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "fri",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "sat",
+   "open": "08:00",
+   "close": "21:00",
+   "closed": false
+  },
+  {
+   "day": "sun",
+   "open": "10:00",
+   "close": "16:00",
+   "closed": false
+  }
+ ],
+ "hours_note": {},
+ "address": "Demo address (not a real shop), Harrow",
+ "postcode": "HA3 5AA",
+ "phone": "07700 900123",
+ "whatsapp": "+447700900123",
+ "announcement": {
+  "ro": "DEMO — prețuri de exemplu, nu este un magazin real.",
+  "en": "DEMO — example prices, not a real shop."
+ },
+ "announcement_on": true,
+ "products": [
+  {
+   "id": "p1",
+   "name": {
+    "ro": "Telemea de oaie",
+    "en": "Sheep's cheese (telemea)"
+   },
+   "price": "4.99",
+   "unit": "400 g",
+   "category": "Lactate / Dairy",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p2",
+   "name": {
+    "ro": "Zacuscă de legume",
+    "en": "Vegetable spread (zacuscă)"
+   },
+   "price": "3.49",
+   "unit": "300 g",
+   "category": "Conserve / Jars",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p3",
+   "name": {
+    "ro": "Mici",
+    "en": "Mici (grilling rolls)"
+   },
+   "price": "6.50",
+   "unit": "1 kg",
+   "category": "Carne / Meat",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p4",
+   "name": {
+    "ro": "Pâine de casă",
+    "en": "Homestyle bread"
+   },
+   "price": "2.20",
+   "unit": "1 loaf",
+   "category": "Brutărie / Bakery",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p5",
+   "name": {
+    "ro": "Cozonac cu nucă",
+    "en": "Walnut sweet bread (cozonac)"
+   },
+   "price": "7.99",
+   "unit": "500 g",
+   "category": "Brutărie / Bakery",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  },
+  {
+   "id": "p6",
+   "name": {
+    "ro": "Apă minerală",
+    "en": "Mineral water"
+   },
+   "price": "1.10",
+   "unit": "1.5 L",
+   "category": "Băuturi / Drinks",
+   "description": {},
+   "pay_link": "",
+   "in_stock": true,
+   "barcode": ""
+  }
+ ],
+ "currency": "GBP",
+ "features": {
+  "whatsapp_order": true,
+  "pay_links": true,
+  "barcode_lookup": true
+ },
+ "demo": true,
+ "made_with": "Built with HVT Foundry Studio (HVT Innovations). This app and its content belong to the shop.",
+ "dir": {
+  "ro": "ltr",
+  "en": "ltr"
+ },
+ "lang_names": {
+  "ro": "Română",
+  "en": "English"
+ },
+ "map_url": "https://www.openstreetmap.org/search?query=Demo%20address%20%28not%20a%20real%20shop%29%2C%20Harrow%2C%20HA3%205AA",
+ "logo": "",
+ "built_at": "2026-09-26T08:53:43+01:00"
+}

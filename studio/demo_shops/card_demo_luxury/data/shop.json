@@ -1,0 +1,540 @@
+{
+ "card_id": "CARD-HAIR-01",
+ "card_version": "0.2",
+ "variant": "salon",
+ "staff_word": "Stylist",
+ "staff_word_plural": "Stylists",
+ "preset": "luxury",
+ "colours": {
+  "primary": "#2B1B2E",
+  "accent": "#C9A66B",
+  "bg": "#F7F1EA",
+  "text": "#231621",
+  "surface": "#FFFDF9"
+ },
+ "fonts": {
+  "display": "Didot, 'Bodoni 72', 'Bodoni MT', 'Playfair Display', 'Times New Roman', serif",
+  "body": "'Avenir Next', Avenir, 'Segoe UI', system-ui, sans-serif"
+ },
+ "pattern": "arches",
+ "radius": "22px",
+ "name": "Maison Aurelle Salon (demo)",
+ "tagline": {
+  "en": "Colour, cut and care - an invented salon for the demo",
+  "ar": "صالون تجريبي - محتوى للعرض فقط",
+  "fr": "Salon fictif pour la démonstration"
+ },
+ "languages": [
+  "en",
+  "ar",
+  "fr"
+ ],
+ "default_language": "en",
+ "logo": "",
+ "hero_images": [
+  "img/b7fcff51400326dd.svg",
+  "img/56c0ae54c75ad55f.svg"
+ ],
+ "hours": [
+  {
+   "day": "mon",
+   "open": "",
+   "close": "",
+   "closed": true
+  },
+  {
+   "day": "tue",
+   "open": "09:30",
+   "close": "19:00",
+   "closed": false
+  },
+  {
+   "day": "wed",
+   "open": "09:30",
+   "close": "19:00",
+   "closed": false
+  },
+  {
+   "day": "thu",
+   "open": "09:30",
+   "close": "19:00",
+   "closed": false
+  },
+  {
+   "day": "fri",
+   "open": "09:30",
+   "close": "19:00",
+   "closed": false
+  },
+  {
+   "day": "sat",
+   "open": "09:30",
+   "close": "19:00",
+   "closed": false
+  },
+  {
+   "day": "sun",
+   "open": "11:00",
+   "close": "16:00",
+   "closed": false
+  }
+ ],
+ "closed_dates": [],
+ "hours_note": {
+  "en": "Late opening Thursday (demo)"
+ },
+ "address": "No real address - demo shop",
+ "postcode": "",
+ "lat": null,
+ "lon": null,
+ "phone": "07700 900456",
+ "whatsapp": "+447700900456",
+ "email": "",
+ "google_place_id": "",
+ "offer": {
+  "en": "(demo) 15% off a first colour appointment - example offer text"
+ },
+ "offer_on": true,
+ "instagram": "",
+ "tiktok": "",
+ "platform_links": {
+  "fresha": "",
+  "treatwell": "",
+  "booksy": ""
+ },
+ "policy_text": {
+  "en": "(demo) Please give 24 hours' notice to cancel or move. Example wording only - each shop writes its own."
+ },
+ "policy_required": true,
+ "policy_short": "24 hours' notice please (demo)",
+ "access_info": {
+  "en": "(demo) Example: step-free entrance, quiet appointments on request."
+ },
+ "loyalty": {
+  "stamps_needed": 8,
+  "reward": "A free treatment (demo)"
+ },
+ "vouchers": {
+  "valid_months": 12,
+  "amounts": [
+   "25",
+   "50",
+   "100"
+  ],
+  "pay_link": ""
+ },
+ "walkin": {
+  "max_waiting": 25,
+  "default_minutes": 30
+ },
+ "booking": {
+  "slot_minutes": 15,
+  "buffer_minutes": 10,
+  "min_notice_minutes": 120,
+  "max_days_ahead": 60,
+  "hold_minutes": 10,
+  "late_cancel_hours": 24,
+  "no_show_grace_minutes": 15,
+  "deposit_after_no_shows": 1,
+  "patch_test_gap_hours": 48,
+  "long_service_minutes": 180,
+  "buffer_may_pass_closing": 1,
+  "reminder_hours": 24,
+  "no_show_deposit": "10"
+ },
+ "messages": {
+  "reminder": "",
+  "review": ""
+ },
+ "services": [
+  {
+   "id": "cut",
+   "name": {
+    "en": "Cut & blow-dry (demo)"
+   },
+   "category": "Cuts",
+   "duration_min": 60,
+   "price_from": "55",
+   "price_note": {},
+   "audience": "women",
+   "hair_types": [
+    "straight",
+    "wavy",
+    "curly"
+   ],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "10",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "mcut",
+   "name": {
+    "en": "Men's restyle (demo)"
+   },
+   "category": "Cuts",
+   "duration_min": 45,
+   "price_from": "40",
+   "price_note": {},
+   "audience": "men",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "balay",
+   "name": {
+    "en": "Balayage (demo)"
+   },
+   "category": "Colour",
+   "duration_min": 180,
+   "price_from": "150",
+   "price_note": {
+    "en": "Price depends on length (demo)"
+   },
+   "audience": "anyone",
+   "hair_types": [],
+   "segments": "60 active, 45 processing, 75 active",
+   "needs_patch_test": true,
+   "staff_ids": [],
+   "deposit": "30",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "roots",
+   "name": {
+    "en": "Root colour (demo)"
+   },
+   "category": "Colour",
+   "duration_min": 90,
+   "price_from": "70",
+   "price_note": {},
+   "audience": "anyone",
+   "hair_types": [],
+   "segments": "30 active, 30 processing, 30 active",
+   "needs_patch_test": true,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "silk",
+   "name": {
+    "en": "Silk press (demo)"
+   },
+   "category": "Styling",
+   "duration_min": 90,
+   "price_from": "65",
+   "price_note": {},
+   "audience": "anyone",
+   "hair_types": [
+    "curly",
+    "coily"
+   ],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "bridal",
+   "name": {
+    "en": "Bridal trial (demo)"
+   },
+   "category": "Occasion",
+   "duration_min": 120,
+   "price_from": "90",
+   "price_note": {},
+   "audience": "women",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [
+    "s1"
+   ],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  },
+  {
+   "id": "treat",
+   "name": {
+    "en": "Bond repair treatment (demo)"
+   },
+   "category": "Treatments",
+   "duration_min": 45,
+   "price_from": "35",
+   "price_note": {},
+   "audience": "anyone",
+   "hair_types": [],
+   "segments": "",
+   "needs_patch_test": false,
+   "staff_ids": [],
+   "deposit": "",
+   "pay_link": "",
+   "description": {}
+  }
+ ],
+ "staff": [
+  {
+   "id": "s1",
+   "name": "Demo Stylist A",
+   "role": {
+    "en": "Creative director (demo)"
+   },
+   "bio": {
+    "en": "Invented profile for the demo - colour and bridal."
+   },
+   "specialities": [
+    "Balayage",
+    "Bridal"
+   ],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": true,
+   "breaks": [
+    {
+     "start": "13:00",
+     "end": "13:30",
+     "flexible": true
+    }
+   ],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  },
+  {
+   "id": "s2",
+   "name": "Demo Stylist B",
+   "role": {
+    "en": "Senior stylist (demo)"
+   },
+   "bio": {
+    "en": "Invented profile for the demo - curls and silk press."
+   },
+   "specialities": [
+    "Curly cuts",
+    "Silk press"
+   ],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": true,
+   "breaks": [
+    {
+     "start": "13:30",
+     "end": "14:00",
+     "flexible": true
+    }
+   ],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  },
+  {
+   "id": "s3",
+   "name": "Demo Stylist C",
+   "role": {
+    "en": "Stylist (demo)"
+   },
+   "bio": {
+    "en": "Invented profile for the demo."
+   },
+   "specialities": [
+    "Men's cuts"
+   ],
+   "photo": "",
+   "branch": "",
+   "walk_ins": true,
+   "bookable": true,
+   "breaks": [
+    {
+     "start": "14:00",
+     "end": "14:30",
+     "flexible": true
+    }
+   ],
+   "break_flexible": true,
+   "days_off": [],
+   "commission": {
+    "service_percent": 0.0,
+    "retail_percent": 0.0
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "id": "g1",
+   "image": "img/53416200ad760146.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g2",
+   "image": "img/d2aae275ee859004.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g3",
+   "image": "img/b607cfc573745bde.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g4",
+   "image": "img/b3580ba116fed1de.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g5",
+   "image": "img/1468f03cfc554b31.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  },
+  {
+   "id": "g6",
+   "image": "img/a4fecbe134dce27f.svg",
+   "caption": {
+    "en": "demo image"
+   }
+  }
+ ],
+ "before_after": [
+  {
+   "id": "ba1",
+   "before": "img/85202152fffc13c9.svg",
+   "after": "img/4bff3431318bed4c.svg",
+   "caption": {
+    "en": "Example pair (demo) - shapes only"
+   },
+   "consent": true
+  }
+ ],
+ "reviews": [
+  {
+   "id": "r1",
+   "author": "Example review (demo)",
+   "stars": 5,
+   "text": "Invented text to show how reviews look. Not a real customer.",
+   "source": "demo - not a real review"
+  },
+  {
+   "id": "r2",
+   "author": "Example review 2 (demo)",
+   "stars": 4,
+   "text": "Invented text. A real shop only shows reviews it actually received.",
+   "source": "demo - not a real review"
+  }
+ ],
+ "packages": [
+  {
+   "id": "pk1",
+   "name": {
+    "en": "Blow-dry club - 5 visits (demo)"
+   },
+   "uses": 5,
+   "price": "120",
+   "valid_days": 180,
+   "pay_link": ""
+  }
+ ],
+ "products": [
+  {
+   "id": "p1",
+   "name": {
+    "en": "Repair shampoo 250ml (demo)"
+   },
+   "brand": "",
+   "size": "",
+   "price": "18",
+   "barcode": "",
+   "low_stock": 2,
+   "image": "img/c282676edbe59ef1.svg",
+   "pay_link": ""
+  },
+  {
+   "id": "p2",
+   "name": {
+    "en": "Heat protect spray (demo)"
+   },
+   "brand": "",
+   "size": "",
+   "price": "16",
+   "barcode": "",
+   "low_stock": 2,
+   "image": "img/71b7d5d878a0b222.svg",
+   "pay_link": ""
+  }
+ ],
+ "branches": [],
+ "modules": {
+  "hero": true,
+  "services": true,
+  "booking_request": false,
+  "staff": true,
+  "gallery": true,
+  "reviews": true,
+  "contact_bar": true,
+  "hours": true,
+  "map": true,
+  "offers": true,
+  "languages": true,
+  "install": true,
+  "admin": true,
+  "deposits": true,
+  "auto_booking": true,
+  "reminders": true,
+  "gcal": true,
+  "platform_links": false,
+  "loyalty": true,
+  "vouchers": true,
+  "packages": true,
+  "retail": true,
+  "walkin_queue": false,
+  "before_after": true,
+  "client_records": true,
+  "rota": true,
+  "review_requests": true,
+  "social_links": false,
+  "referrals": false,
+  "multi_branch": false,
+  "accessibility": true,
+  "policy": true,
+  "analytics": true,
+  "supplier_finder": false
+ },
+ "suppliers": [],
+ "deposit_provider": "",
+ "public_url": "",
+ "demo": true,
+ "demo_note": "Demo clock set to Sat 24 Oct 2026, 10:30. Bookings, queue and alerts are invented.",
+ "admin": {
+  "password_hash": "pbkdf2_sha256$240000$39e9ec3a85caa47e24edeea6cf04689e$fe2f8ad25959c8df34a7bb58f7589c95f87ab8da0868095c0f44ec5a8f7ddf2e"
+ },
+ "made_with": "Built with HVT Foundry Studio (HVT Innovations). This app and its content belong to the shop.",
+ "updated_at": "2026-10-19T00:17:54+01:00"
+}

@@ -1,0 +1,183 @@
+HVT Foundry Studio — LIVE sample run, 2026-09-26T08:47:44+01:00 (box clock, Europe/London)
+Real internet from the build box. No Brave/SerpAPI key. Fresh cache (nothing re-used). Nothing here is checked by us.
+Provider order: brave, serpapi, duckduckgo; max web queries per search: 6
+
+====================================================================================================
+Romanian grocer — suppliers
+  params: {'category': 'suppliers', 'community': 'romanian', 'postcode': 'HA3 5AA', 'radius_m': 5000}
+  took 35.5s
+  location: HA3 5AA = Marlborough, Harrow (51.590353, -0.332695) — https://api.postcodes.io/postcodes/HA3%205AA checked 2026-09-26T08:47:44+01:00
+  phrases used for web search:
+    [English] Romanian food wholesaler near Harrow
+    [English] Romanian cash and carry London
+    [Romanian] angro produse românești Londra   (not yet checked by a native speaker)
+    [Romanian] distribuitor produse românești Marea Britanie   (not yet checked by a native speaker)
+  WEB results: 0
+  MAP results (OpenStreetMap): 12
+    - Al Murad Shop (Wholesaler) — 86 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/9492463841 | checked 2026-09-26T08:48:19+01:00
+    - Triple A Cash and Carry (Shop: supermarket) — 1.7 miles — 401 Honeypot Lane, Stanmore | https://www.openstreetmap.org/node/5283782511 | checked 2026-09-26T08:48:19+01:00
+    - Sriram Cash & Carry (Shop: supermarket) — 1.9 miles — 396-398 Rayners Lane, Pinner, HA5 5DY | https://www.openstreetmap.org/node/5061630783 | checked 2026-09-26T08:48:19+01:00
+    - Moon Cash & Carry (Shop: supermarket) — 2.0 miles — 425-429 Alexandra Avenue, Harrow, HA2 9SE | https://www.openstreetmap.org/node/5061630777 | checked 2026-09-26T08:48:19+01:00
+    - TSK Cash and Carry (Shop: convenience) — 2.0 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/4693286251 | checked 2026-09-26T08:48:19+01:00
+    - Valampuri Cash & Carry (Shop: convenience) — 2.1 miles — 293 Northolt Road, Harrow, HA2 8HX | https://www.openstreetmap.org/node/2610004450 | checked 2026-09-26T08:48:19+01:00
+    - Abis Cash & Carry (Shop: supermarket) — 2.1 miles — 301-303 Northolt Road, Harrow, HA2 8JA | https://www.openstreetmap.org/node/4639651360 | checked 2026-09-26T08:48:19+01:00
+    - Malar Cash & Carry (Shop: convenience) — 3.0 miles — No address in OpenStreetMap | https://www.openstreetmap.org/way/251425353 | checked 2026-09-26T08:48:19+01:00
+    - Anglo Asian Cash & Carry (Shop: convenience) — 3.0 miles — 537-539A High Road, Wembley, HA0 2DJ | https://www.openstreetmap.org/way/251425344 | checked 2026-09-26T08:48:19+01:00
+    - Wembley Halal Meat, Cash & Carry, Mini Market, Fruit & Veg (Shop: convenience) — 3.0 miles — No address in OpenStreetMap | https://www.openstreetmap.org/way/251407297 | checked 2026-09-26T08:48:19+01:00
+    - Ganapathy Cash & Carry & Wine Mart (Shop: convenience) — 3.1 miles — 34-38 Ealing Road | https://www.openstreetmap.org/way/259136064 | checked 2026-09-26T08:48:19+01:00
+    - Asian Cash & Carry (Shop: convenience) — 3.1 miles — Ealing Road | https://www.openstreetmap.org/way/259376241 | checked 2026-09-26T08:48:19+01:00
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages). The map results below still came through.
+
+====================================================================================================
+Polish shop — stock
+  params: {'category': 'stock', 'community': 'polish', 'postcode': 'HA3 5AA', 'radius_m': 3000}
+  took 23.7s
+  location: HA3 5AA = Marlborough, Harrow (51.590353, -0.332695) — https://api.postcodes.io/postcodes/HA3%205AA checked 2026-09-26T08:47:44+01:00
+  phrases used for web search:
+    [English] Polish products importer UK wholesale
+    [English] Polish grocery distributor UK
+    [Polish] polskie produkty hurt Wielka Brytania   (not yet checked by a native speaker)
+    [Polish] dostawca polskich produktów do sklepu Londyn   (not yet checked by a native speaker)
+  WEB results: 0
+  MAP results (OpenStreetMap): 2
+    - Al Murad Shop (Wholesaler) — 86 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/9492463841 | checked 2026-09-26T08:48:47+01:00
+    - Triple A Cash and Carry (Shop: supermarket) — 1.7 miles — 401 Honeypot Lane, Stanmore | https://www.openstreetmap.org/node/5283782511 | checked 2026-09-26T08:48:47+01:00
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages). The map results below still came through.
+
+====================================================================================================
+Arabic sweets — stock (baklava)
+  params: {'category': 'stock', 'community': 'arabic', 'postcode': 'HA3 5AA', 'radius_m': 3000, 'free_text': 'baklava'}
+  took 63.1s
+  location: HA3 5AA = Marlborough, Harrow (51.590353, -0.332695) — https://api.postcodes.io/postcodes/HA3%205AA checked 2026-09-26T08:47:44+01:00
+  phrases used for web search:
+    [English] Middle Eastern products importer UK wholesale
+    [English] Middle Eastern grocery distributor UK
+    [Arabic] استيراد منتجات غذائية عربية بريطانيا   (not yet checked by a native speaker)
+    [Arabic] موزع حلويات عربية بريطانيا   (not yet checked by a native speaker)
+    [Owner's own words] baklava Harrow
+  WEB results: 0
+  MAP results (OpenStreetMap): 7
+    - Al Murad Shop (Wholesaler) — 86 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/9492463841 | checked 2026-09-26T08:49:54+01:00
+    - Bilal Halal Meat (Shop: butcher) — 101 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/9492463840 | COMMUNITY NAME MATCH | checked 2026-09-26T08:49:54+01:00
+    - Alqudus Halal Meat (Shop: convenience) — 206 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/2494430501 | COMMUNITY NAME MATCH | checked 2026-09-26T08:49:54+01:00
+    - Afro & Caribbean Halal Meat (Shop: butcher) — 348 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/11663151217 | COMMUNITY NAME MATCH | checked 2026-09-26T08:49:54+01:00
+    - Al-Mansoor Halal Meat (Shop: butcher) — 0.4 miles — 79 High Street, Harrow, HA3 5DQ | https://www.openstreetmap.org/way/243231688 | COMMUNITY NAME MATCH | checked 2026-09-26T08:49:54+01:00
+    - Faisal Halal Meat (Shop: butcher) — 1.3 miles — 7 Broadway Parade, Pinner Road, Harrow, HA2 7SY | https://www.openstreetmap.org/node/13458522025 | COMMUNITY NAME MATCH | checked 2026-09-26T08:49:54+01:00
+    - Triple A Cash and Carry (Shop: supermarket) — 1.7 miles — 401 Honeypot Lane, Stanmore | https://www.openstreetmap.org/node/5283782511 | checked 2026-09-26T08:49:54+01:00
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages). The map results below still came through.
+
+====================================================================================================
+Any shop — storage near Harrow town centre
+  params: {'category': 'storage', 'community': 'other', 'postcode': 'HA1 1AA', 'radius_m': 5000}
+  took 84.8s
+  location: HA1 1AA = Marlborough, Harrow (51.588869, -0.333298) — https://api.postcodes.io/postcodes/HA1%201AA checked 2026-09-26T08:49:58+01:00
+  phrases used for web search:
+    [English] self storage near Harrow
+    [English] small business storage unit Harrow
+    [English] cold storage rental London small business
+  WEB results: 0
+  MAP results (OpenStreetMap): 0
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  ERROR from OpenStreetMap (Overpass) (timeout): OpenStreetMap's free map servers are busy right now (timed out), after trying 3 times. Please try again in a minute.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages).
+
+====================================================================================================
+Any shop — delivery / couriers
+  params: {'category': 'delivery', 'community': 'other', 'postcode': 'HA3 5AA', 'radius_m': 2000}
+  took 25.2s
+  location: HA3 5AA = Marlborough, Harrow (51.590353, -0.332695) — https://api.postcodes.io/postcodes/HA3%205AA checked 2026-09-26T08:47:44+01:00
+  phrases used for web search:
+    [English] same day courier Harrow
+    [English] parcel delivery for small business UK
+    [English] sign up takeaway shop Deliveroo Uber Eats Just Eat London
+  WEB results: 0
+  MAP results (OpenStreetMap): 15
+    - InPost (Parcel locker) — 78 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/8666167329 | checked 2026-09-26T08:51:52+01:00
+    - InPost (Parcel locker) — 156 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/10000638823 | checked 2026-09-26T08:51:52+01:00
+    - Wealdstone Post Office (Post office) — 0.3 miles — 4-12 Headstone Drive, Harrow, HA3 5QL | https://www.openstreetmap.org/node/60779760 | checked 2026-09-26T08:51:52+01:00
+    - Harrow Collection Office (Post office) — 0.4 miles — Elmgrove Road, Harrow, HA1 2RF | https://www.openstreetmap.org/node/210743718 | checked 2026-09-26T08:51:52+01:00
+    - Yeep (Parcel locker) — 0.4 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/14026328295 | checked 2026-09-26T08:51:52+01:00
+    - Royal Mail (Delivery depot) — 0.4 miles — No address in OpenStreetMap | https://www.openstreetmap.org/way/186972131 | checked 2026-09-26T08:51:52+01:00
+    - InPost (Parcel locker) — 0.7 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/13520003955 | checked 2026-09-26T08:51:52+01:00
+    - Harrow Post Office (Post office) — 0.7 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/4598123372 | checked 2026-09-26T08:51:52+01:00
+    - Amazon Locker (Parcel locker) — 0.7 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/12823722884 | checked 2026-09-26T08:51:52+01:00
+    - Yeep (Parcel locker) — 0.8 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/13362149266 | checked 2026-09-26T08:51:52+01:00
+    - InPost (Parcel locker) — 0.8 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/12441680614 | checked 2026-09-26T08:51:52+01:00
+    - Amazon Locker - kole (Parcel locker) — 0.8 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/8441023235 | checked 2026-09-26T08:51:52+01:00
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages). The map results below still came through.
+
+====================================================================================================
+Turkish shop — finance
+  params: {'category': 'finance', 'community': 'turkish', 'postcode': 'HA3 5AA', 'radius_m': 1500}
+  took 40.6s
+  location: HA3 5AA = Marlborough, Harrow (51.590353, -0.332695) — https://api.postcodes.io/postcodes/HA3%205AA checked 2026-09-26T08:47:44+01:00
+  phrases used for web search:
+    [English] small business grant Harrow council
+    [English] business bank account for a small shop UK
+    [English] card payment machine small shop UK fees
+    [English] Start Up Loans British Business Bank
+    [Turkish] İngiltere'de küçük işletme kredisi   (not yet checked by a native speaker)
+    [Turkish] İngiltere'de şirket banka hesabı açma   (not yet checked by a native speaker)
+  WEB results: 0
+  MAP results (OpenStreetMap): 30
+    - Paywastoon (Money transfer) — 177 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/11163196827 | checked 2026-09-26T08:52:37+01:00
+    - Aimal & Co (Accountant) — 196 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/2494430504 | checked 2026-09-26T08:52:37+01:00
+    - Sheridan Clarke (Accountant) — 240 m — 25-27 The Bridge | https://www.openstreetmap.org/way/243356254 | checked 2026-09-26T08:52:37+01:00
+    - Hamza Exchange (Money transfer) — 340 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/11929228073 | checked 2026-09-26T08:52:37+01:00
+    - Khyber Exchange & Travel (Currency exchange) — 347 m — No address in OpenStreetMap | https://www.openstreetmap.org/node/9695438867 | checked 2026-09-26T08:52:37+01:00
+    - FlickForex (Currency exchange) — 0.4 miles — 75 High Street, Harrow, HA3 5DQ | https://www.openstreetmap.org/way/243231693 | checked 2026-09-26T08:52:37+01:00
+    - Holiday Money Exchange (Currency exchange) — 0.6 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/13391739051 | checked 2026-09-26T08:52:37+01:00
+    - Outbooks (Accountant) — 0.6 miles — Whitefriars Avenue, Harrow, HA3 5RN | https://www.openstreetmap.org/node/12701657903 | checked 2026-09-26T08:52:37+01:00
+    - Lloyds Bank (Bank) — 0.6 miles — 286;288 Station Road, Harrow, HA1 2EB | https://www.openstreetmap.org/node/1494854475 | checked 2026-09-26T08:52:37+01:00
+    - Currency Exchange Corporation (Currency exchange) — 0.6 miles — 313 Station Road, Harrow, HA1 2TA | https://www.openstreetmap.org/node/1508663683 | checked 2026-09-26T08:52:37+01:00
+    - Yorkshire Building Society (Bank) — 0.6 miles — No address in OpenStreetMap | https://www.openstreetmap.org/node/12619131156 | checked 2026-09-26T08:52:37+01:00
+    - HSBC UK (Bank) — 0.6 miles — 26-28 St Ann's Road, Harrow | https://www.openstreetmap.org/node/915100793 | checked 2026-09-26T08:52:37+01:00
+  ERROR from DuckDuckGo (connection): Couldn't connect to DuckDuckGo (the connection was refused or dropped). The device itself is online.
+  NOTE: No web results came back. The web search services refused or returned nothing (see the messages). The map results below still came through.
+
+====================================================================================================
+CONNECTOR 'Test' buttons, run live now (no keys added):
+  brave_search             [code-ready-needs-key ] NO  Add these first (Connectors screen): Brave Search API key
+  companies_house          [code-ready-needs-key ] NO  Add these first (Connectors screen): Companies House REST API key
+  deliveroo                [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  duckduckgo               [unverified           ] NO  Can't reach the internet from this device (or the service is down). Check Wi-Fi or mobile data and try again.
+  easypost                 [code-ready-needs-key ] NO  Add these first (Connectors screen): EasyPost API key (test or production)
+  evri                     [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  frankfurter              [working-tested       ] OK  Working: £1 = €1.1622 (ECB rate for 2026-09-25).
+  google_business_profile  [unverified           ] NO  Add these first (Connectors screen): OAuth access token
+  just_eat                 [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  open_food_facts          [working-tested       ] OK  Working: barcode 5900259128843 = Lay's
+  overpass_osm             [working-tested       ] OK  Working: 5 post office(s) within 1.5 km of HA3 5AA.
+  postcodes_io             [working-tested       ] OK  Working: HA3 5AA is in Harrow (51.5904, -0.3327).
+  royal_mail_click_drop    [unverified           ] NO  Add these first (Connectors screen): Click & Drop API key
+  shippo                   [code-ready-needs-key ] NO  Add these first (Connectors screen): Shippo API token (shippo_test_… or shippo_live_…)
+  shopify                  [code-ready-needs-key ] NO  Add these first (Connectors screen): Shop address (yourshop.myshopify.com), Admin API access token (shpat_…)
+  square                   [code-ready-needs-key ] NO  Add these first (Connectors screen): Square access token
+  stripe                   [code-ready-needs-key ] NO  Add these first (Connectors screen): Stripe secret key (sk_test_… to try, sk_live_… for real)
+  stuart                   [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  sumup                    [code-ready-needs-key ] NO  Add these first (Connectors screen): SumUp API key (sup_sk_…), Merchant code (e.g. MK01A8C2)
+  twilio_sms               [code-ready-needs-key ] NO  Add these first (Connectors screen): Account SID (AC…), Auth token
+  uber_direct              [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  uber_eats                [unverified           ] NO  No code for this one yet: it needs a business/partner account and its API docs aren't public enough to build against. Listed so you know it exists.
+  whatsapp_cloud           [unverified           ] NO  Add these first (Connectors screen): Access token, Phone number ID
+  whatsapp_link            [working-tested       ] OK  Ready: https://wa.me/447700900123?text=Hello
+  woocommerce              [code-ready-needs-key ] NO  Add these first (Connectors screen): Website address (https://…), Consumer key (ck_…), Consumer secret (cs_…)
+  xero                     [unverified           ] NO  Add these first (Connectors screen): Custom connection client ID, Client secret
+  custom API (frankfurter v1 /latest, GBP): HTTP 200 -> {'amount': 1.0, 'base': 'GBP', 'date': '2026-09-25', 'rates': {'EUR': 1.1622, 'PLN': 5.0808, 'RON': 6.1323, 'TRY': 64.847}}
+  OpenAPI import of https://api.frankfurter.dev/v2/openapi.json: 'Frankfurter API' base https://api.frankfurter.dev/v2 — 8 endpoints: GET /rates, GET /rate/{base}/{quote}, GET /providers/{provider}, GET /providers/{provider}/rates, GET /providers/{provider}/rate/{base}/{quote}, GET /currency/{code}, GET /currencies, GET /providers
+
+====================================================================================================
+ADDENDUM — storage map search re-run after a fix, 2026-09-26 about 08:55 (box clock, Europe/London)
+The storage search above timed out twice (08:40 and 08:50). The cause was a heavy clause that searched the names of all
+warehouse buildings. After removing it, the same search (HA1 1AA, 5 km, OpenStreetMap only) worked in 16 s:
+    - Access Self Storage — 0.7 miles | https://www.openstreetmap.org/node/9434194431
+    - Big Yellow Self Storage — 0.8 miles | https://www.openstreetmap.org/node/11141683247
+    - Securus Safe Deposit Centres — 2.0 miles | https://www.openstreetmap.org/node/4118665290
+    - Self Storage — 2.1 miles | https://www.openstreetmap.org/node/12647049200
+All found live and not checked by us.
+Also note: at 08:38 DuckDuckGo answered with a "prove you're not a robot" page. By 08:47 it was refusing connections from this
+box altogether. Web results therefore need a Brave Search key (or a normal home or phone connection, which we have not tested).

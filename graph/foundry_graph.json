@@ -1,0 +1,4742 @@
+{
+  "graph_id": "foundry_graph",
+  "schema": "HVT-0004 v0.1 (+ proposed HVT-0006 / HVT-0007 types, not yet canonical)",
+  "generated": "2026-11-20",
+  "generated_by": "AI executor for Travis Lee Swift (DR-2026-09-25-03) — rebuilt from the documents in this repository; the original JSON file was not in the source PDF | Completed 2026-11-20 by Grok Bot (AI executor) on Tony Adams' instruction — DR-2026-11-20-01…12.",
+  "authoritative_source": "The Markdown documents. If this file and a document disagree, the document wins until reconciled (HVT-0004 §1).",
+  "held_not_registered": [
+    "ENG-0005 Local Stock Ledger (path A, authorised on trigger — DR-2026-11-20-05; registers on first live owner evidence)",
+    "ENG-0006 (rejected, DR-2026-09-04-10)"
+  ],
+  "objects": [
+    {
+      "id": "HVT-0001",
+      "class": "Document",
+      "name": "HVT Foundry Constitution",
+      "owner": "CEO Agent",
+      "status": "Approved",
+      "version": "1.3",
+      "relationships": [
+        {
+          "type": "governs",
+          "target_id": "HVT-0002"
+        },
+        {
+          "type": "governs",
+          "target_id": "HVT-0003"
+        },
+        {
+          "type": "governs",
+          "target_id": "HVT-0004"
+        },
+        {
+          "type": "governs",
+          "target_id": "HVT-0006"
+        },
+        {
+          "type": "governs",
+          "target_id": "HVT-0007"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "CEO Agent",
+          "date": "2026-08-04",
+          "decision_ref": "HVT-0001 Changelog v1.0 (ratified)"
+        },
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-06"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "0.1",
+          "date": "2026-08-04",
+          "change": "Initial draft.",
+          "ref": "HVT-0001"
+        },
+        {
+          "version": "1.0",
+          "date": "2026-08-04",
+          "change": "Approved and ratified, including Article XIII.",
+          "ref": "HVT-0001"
+        },
+        {
+          "version": "1.1",
+          "date": "2026-08-04",
+          "change": "Added Article XIV (Model-First Doctrine).",
+          "ref": "DR-2026-08-04-04"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-08-04",
+          "change": "Added Article VI.4 (vendor neutrality).",
+          "ref": "DR-2026-08-04-05"
+        },
+        {
+          "date": "2026-11-20",
+          "change": "Approved v1.2 → Approved v1.3",
+          "decision_ref": "DR-2026-11-20-06"
+        }
+      ],
+      "authority": "HVT-0001 Art. XI",
+      "source_document": "HVT-0001"
+    },
+    {
+      "id": "HVT-0002",
+      "class": "Document",
+      "name": "Foundry Organisation & Authority Model",
+      "owner": "CEO Agent",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0003"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-06"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.2 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-06"
+        }
+      ],
+      "authority": "HVT-0001",
+      "source_document": "HVT-0002",
+      "note": "Document says 'The Ten Offices' but its chain lists eleven (incl. Quality Assurance) — flagged, not corrected (DR-2026-09-25-01)."
+    },
+    {
+      "id": "HVT-0003",
+      "class": "Document",
+      "name": "HVT Foundry Business Asset Registry",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        },
+        {
+          "type": "contains",
+          "target_id": "ENG-0001"
+        },
+        {
+          "type": "contains",
+          "target_id": "ENG-0002"
+        },
+        {
+          "type": "contains",
+          "target_id": "ENG-0003"
+        },
+        {
+          "type": "contains",
+          "target_id": "ENG-0004"
+        },
+        {
+          "type": "contains",
+          "target_id": "DOC-0001"
+        },
+        {
+          "type": "contains",
+          "target_id": "DOC-0004"
+        },
+        {
+          "type": "contains",
+          "target_id": "DOC-0005"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0002",
+        "HVT-0006"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.4 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "authority": "HVT-0001 Art. VII, Art. XIII.5",
+      "source_document": "HVT-0003",
+      "note": "v0.5 Draft prepared 2026-09-25 (DR-2026-09-25-05) adding Art. II.3 Search-result rows and DOC-0006/DOC-0007; v0.4 remains the recorded version until reviewed."
+    },
+    {
+      "id": "HVT-0004",
+      "class": "Document",
+      "name": "HVT Object Model (HOM) Specification",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0002",
+        "HVT-0003"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-07"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "0.1",
+          "date": "2026-08-04",
+          "change": "Initial draft.",
+          "ref": "HVT-0004"
+        },
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-07"
+        }
+      ],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "HVT-0004",
+      "note": "v0.2 consolidating HVT-0006/HVT-0007 proposed types drafted 2026-09-25 (DR-2026-09-25-06), status Draft, not reviewed. v0.1 remains the version on record."
+    },
+    {
+      "id": "HVT-0006",
+      "class": "Document",
+      "name": "Industry & Compatibility Taxonomy",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0003"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0004"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0002",
+        "HVT-0003",
+        "HVT-0004"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-08"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.5 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-08"
+        }
+      ],
+      "authority": "HVT-0001 Art. XIV",
+      "source_document": "HVT-0006",
+      "note": "Header and changelog say v0.5 (2026-09-05); README table and HVT-0006-OVL-0001 still say v0.4 — flagged, not reconciled (DR-2026-09-25-01)."
+    },
+    {
+      "id": "HVT-0006-OVL-0001",
+      "class": "Document",
+      "name": "BUT-0001 capability overlay after DR-2026-09-04-10",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10a"
+        }
+      ],
+      "dependencies": [
+        "HVT-0006",
+        "DR-2026-09-04-10",
+        "DR-2026-09-04-10a"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-04"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-04"
+        }
+      ],
+      "authority": "DR-2026-09-04-10a",
+      "source_document": "HVT-0006-OVL-0001",
+      "reviewed_by": "pending Raj"
+    },
+    {
+      "id": "HVT-0007",
+      "class": "Document",
+      "name": "Marketplace Layer & Solution Catalog",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0003"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0004"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0002",
+        "HVT-0003",
+        "HVT-0004",
+        "HVT-0006"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Approved v1.0",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "HVT-0001 Art. VI.4",
+      "source_document": "HVT-0007"
+    },
+    {
+      "id": "AGT-0001",
+      "class": "Agent",
+      "name": "CEO Agent",
+      "owner": "CEO Office",
+      "status": "Registered",
+      "version": "n/a",
+      "relationships": [
+        {
+          "type": "belongs_to",
+          "target_id": "CEO Office"
+        },
+        {
+          "type": "owns",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "owns",
+          "target_id": "HVT-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0002 v1.0 §4.2",
+      "source_document": "HVT-0002",
+      "office": "CEO Office",
+      "id_note": "AGT- prefix adopted in HVT-0004 v1.0 §9.2 (DR-2026-11-20-07)."
+    },
+    {
+      "id": "AGT-0002",
+      "class": "Agent",
+      "name": "Chief Architect",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "n/a",
+      "relationships": [
+        {
+          "type": "belongs_to",
+          "target_id": "Architecture Office"
+        },
+        {
+          "type": "owns",
+          "target_id": "HVT-0003"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0002 v1.0 §4.2",
+      "source_document": "HVT-0002",
+      "office": "Architecture Office",
+      "id_note": "AGT- prefix adopted in HVT-0004 v1.0 §9.2 (DR-2026-11-20-07).",
+      "vacancy": "Role vacant; CEO Office covers reviews under EXC-2026-11-20-01 until 2027-05-20 (DR-2026-11-20-02)."
+    },
+    {
+      "id": "ENG-0001",
+      "class": "Engine",
+      "name": "Local Customer Engine",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "0.1",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "solves",
+          "target_id": "PRB-0002",
+          "note": "customers half of 'empty slots' (SES-0002 rung 2 mapping)"
+        },
+        {
+          "type": "solves",
+          "target_id": "PRB-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001"
+      ],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-02",
+      "source_document": "HVT-0003",
+      "purpose": "Simple CRM + appointment book + basic loyalty for a single-location high-street business"
+    },
+    {
+      "id": "ENG-0002",
+      "class": "Engine",
+      "name": "Local Content & Booking Engine",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "0.1",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "solves",
+          "target_id": "PRB-0001"
+        },
+        {
+          "type": "solves",
+          "target_id": "PRB-0002"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001"
+      ],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-02",
+      "source_document": "HVT-0003",
+      "purpose": "Simple website + online booking + local map integration, editable by a non-technical owner from a phone"
+    },
+    {
+      "id": "ENG-0003",
+      "class": "Engine",
+      "name": "Commerce Engine",
+      "owner": "Architecture Office",
+      "status": "Reusable Asset",
+      "version": "2.3",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DOC-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "DOC-0004"
+        },
+        {
+          "type": "solves",
+          "target_id": "PRB-0005"
+        },
+        {
+          "type": "used_by",
+          "target_id": "Mystic Veil"
+        },
+        {
+          "type": "used_by",
+          "target_id": "Sales Trainer"
+        },
+        {
+          "type": "used_by",
+          "target_id": "Law Firm"
+        },
+        {
+          "type": "used_by",
+          "target_id": "Estate Agent"
+        }
+      ],
+      "dependencies": [
+        "DOC-0001",
+        "DOC-0004"
+      ],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0003 §4",
+      "source_document": "HVT-0003"
+    },
+    {
+      "id": "ENG-0004",
+      "class": "Engine",
+      "name": "Configurator Engine",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "0.2",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0004"
+        },
+        {
+          "type": "works_with",
+          "target_id": "ENG-0001"
+        },
+        {
+          "type": "works_with",
+          "target_id": "ENG-0002"
+        },
+        {
+          "type": "works_with",
+          "target_id": "ENG-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0006",
+        "HVT-0004"
+      ],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "registered, not built → built + run on theatre",
+          "decision_ref": "DR-2026-11-20-11"
+        }
+      ],
+      "authority": "DR-2026-08-04-03",
+      "source_document": "HVT-0003",
+      "note": "Built and run as foundry_os/ (Job D, DR-2026-11-20-11). Run on theatre only; maturity stays Prototype."
+    },
+    {
+      "id": "DOC-0001",
+      "class": "Asset",
+      "name": "Commerce Engine High-Street Integration Guide",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.2",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0003"
+        },
+        {
+          "type": "used_by",
+          "target_id": "ENG-0003",
+          "note": "dependency of ENG-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "ENG-0003"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-04",
+          "change": "Created; supersedes the unresolved 2026-08-04 seed entry.",
+          "ref": "DR-2026-08-04-01"
+        },
+        {
+          "date": "2026-11-20",
+          "change": "Draft v1.0 → Prototype (document Approved) v1.2",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "authority": "DR-2026-08-04-01",
+      "source_document": "DOC-0001",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0004",
+      "class": "Asset",
+      "name": "Commerce Engine Provider Abstraction Notes",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.2",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0003"
+        },
+        {
+          "type": "used_by",
+          "target_id": "ENG-0003",
+          "note": "dependency of ENG-0003"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "ENG-0003"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-04",
+          "change": "Created; supersedes the unresolved 2026-08-04 seed entry.",
+          "ref": "DR-2026-08-04-01"
+        },
+        {
+          "date": "2026-11-20",
+          "change": "Draft v1.0 → Prototype (document Approved) v1.2",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "authority": "DR-2026-08-04-01",
+      "source_document": "DOC-0004",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0005",
+      "class": "Asset",
+      "name": "High-Street Tablet Design Loop",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.2",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-08-04-06"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0004"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "WKF-0001"
+        },
+        {
+          "type": "implements",
+          "target_id": "WKF-0001"
+        }
+      ],
+      "dependencies": [
+        "HVT-0001",
+        "HVT-0006",
+        "DR-2026-08-04-06",
+        "ENG-0004",
+        "WKF-0001"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v1.0 → Prototype (document Approved) v1.2",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "authority": "DR-2026-08-04-08",
+      "source_document": "DOC-0005",
+      "asset_category": "Documentation",
+      "pilot": "BUT-0001",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0008",
+      "class": "Asset",
+      "name": "Progressive Build Session — ladder",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-12"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0007"
+        }
+      ],
+      "dependencies": [
+        "DR-2026-09-04-10",
+        "DR-2026-09-04-12",
+        "HVT-0007"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-03"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.2 → Prototype (document Approved) v1.0",
+          "decision_ref": "DR-2026-11-20-03"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "DOC-0008",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0009",
+      "class": "Asset",
+      "name": "Stan Lee hibernation brief — everything filed to 2026-09-05",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-01"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Prototype (document Approved) v1.0",
+          "decision_ref": "DR-2026-11-20-01"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "DOC-0009",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0006",
+      "class": "Asset",
+      "name": "Stock Alert Procedure (capability spec, connector path)",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0003"
+        }
+      ],
+      "dependencies": [
+        "DR-2026-09-04-10",
+        "ENG-0003"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Prototype (document Approved) v1.0",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "authority": "DR-2026-09-25-05",
+      "source_document": "DOC-0006",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "DOC-0007",
+      "class": "Asset",
+      "name": "Review Reply Procedure (capability spec, connector path)",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0001"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "ENG-0002"
+        }
+      ],
+      "dependencies": [
+        "DR-2026-09-04-10",
+        "ENG-0001",
+        "ENG-0002"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft v0.1 → Prototype (document Approved) v1.0",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "authority": "DR-2026-09-25-05",
+      "source_document": "DOC-0007",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "note": "Asset maturity in `status`; document lifecycle in `document_status` (HVT-0004 v1.0 §9.3)."
+    },
+    {
+      "id": "WKF-0001",
+      "class": "Workflow",
+      "name": "Tablet Feedback & Wish Loop",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [
+        "HVT-0006"
+      ],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-06",
+      "source_document": "HVT-0006",
+      "steps": [
+        "Tablet Session",
+        "Capture Wishes",
+        "Engine Search (Art. II) or Configurator re-run (ENG-0004)",
+        "New configuration offered for approval"
+      ],
+      "note": "HVT-0004 defines no status vocabulary for Workflow; 'Registered' is descriptive only."
+    },
+    {
+      "id": "SEC-0001",
+      "class": "Sector",
+      "name": "Services",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0001",
+      "class": "Market Industry",
+      "name": "Personal Care",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0001"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "PRB-0001",
+      "class": "Problem",
+      "name": "Missed appointments",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001"
+      ],
+      "keywords": [
+        "no-show",
+        "no show",
+        "don't turn up",
+        "didn't turn up",
+        "missed appointment",
+        "don't text",
+        "don’t text",
+        "forget"
+      ]
+    },
+    {
+      "id": "PRB-0002",
+      "class": "Problem",
+      "name": "Empty time slots",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001"
+      ],
+      "keywords": [
+        "empty",
+        "stare at the book",
+        "quiet",
+        "gaps in the diary",
+        "slots"
+      ]
+    },
+    {
+      "id": "PRB-0003",
+      "class": "Problem",
+      "name": "No repeat customers",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001"
+      ],
+      "keywords": [
+        "regular",
+        "repeat",
+        "who comes back",
+        "don't text",
+        "don’t text"
+      ]
+    },
+    {
+      "id": "PRB-0004",
+      "class": "Problem",
+      "name": "Manual stock",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001"
+      ],
+      "keywords": [
+        "runs out",
+        "run out",
+        "colour",
+        "foil",
+        "stock",
+        "reorder"
+      ]
+    },
+    {
+      "id": "PRB-0005",
+      "class": "Problem",
+      "name": "Slow checkout",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001",
+        "BUT-0004"
+      ],
+      "keywords": [
+        "checkout",
+        "slow till",
+        "paper receipt",
+        "queue at the till"
+      ]
+    },
+    {
+      "id": "BUT-0001",
+      "class": "Business Type",
+      "name": "Hair Salon",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0001"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "sector": "Personal Care (via MKT-0001, under SEC-0001 Services)",
+        "common_problems": [
+          "Missed appointments",
+          "Empty time slots",
+          "No repeat customers",
+          "Manual stock",
+          "Slow checkout"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Appointment booking",
+            "covered_by": "ENG-0002"
+          },
+          {
+            "name": "Payment processing",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Customer records / loyalty",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Stock / inventory tracking",
+            "covered_by": null,
+            "hvt_0006_prose": "GAP (pre-Search wording retained)",
+            "overlay": {
+              "source": "HVT-0006-OVL-0001",
+              "search": "DR-2026-09-04-10",
+              "search_result": "PARTIAL MATCH",
+              "foundry_engine": null,
+              "status_prose": "Configured-by-connector (pending owner plan)",
+              "default_order": [
+                "S1 Square inventory + alerts if owner already on Square",
+                "S2 Stripe-only is not stock-on-phone; do not force a new payments account (Art. VIII)",
+                "S3 else sheet + WhatsApp/email procedure",
+                "else reopen Engine Search"
+              ],
+              "do_not_register": "ENG-0005",
+              "procedure": "DOC-0006 (v1.0 Approved)",
+              "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+            }
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "hvt_0006_prose": "GAP (pre-Search wording retained)",
+            "overlay": {
+              "source": "HVT-0006-OVL-0001",
+              "search": "DR-2026-09-04-10",
+              "search_result": "PARTIAL MATCH",
+              "foundry_engine": null,
+              "compose": [
+                "ENG-0001",
+                "ENG-0002"
+              ],
+              "status_prose": "Configured-by-connector",
+              "default_order": [
+                "R1 Google Business Profile read + reply",
+                "R2 WhatsApp Business app private follow-up",
+                "R3 optional one-shot ask after completed booking"
+              ],
+              "do_not": "auto-reply public reviews without owner sign-off",
+              "do_not_register": "ENG-0006",
+              "procedure": "DOC-0007 (v1.0 Approved)",
+              "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+            }
+          },
+          {
+            "name": "Staff rota / timesheets",
+            "covered_by": null,
+            "note": "not yet modeled — future Workflow candidate"
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0002",
+          "ENG-0003"
+        ],
+        "recommended_packages": [],
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0003",
+          "INT-0004",
+          "INT-0005",
+          "INT-0006",
+          "INT-0007"
+        ],
+        "deployment_targets": [
+          "Web",
+          "Tablet",
+          "Phone",
+          "PWA"
+        ],
+        "pricing_bands": [
+          "Basic",
+          "Professional",
+          "Enterprise"
+        ],
+        "time_to_deploy": "same session, per DOC-0001 §Instant Integration Path",
+        "complexity_score": 2,
+        "complexity_score_note": "first-pass estimate, no defined method (HVT-0006 §8 item 6)",
+        "business_model": null,
+        "business_model_note": "deferred (HVT-0006 §8 item 7)",
+        "classify_keywords": [
+          "hair",
+          "salon",
+          "barber",
+          "colour",
+          "chairs",
+          "chair",
+          "stylist",
+          "blow-dry",
+          "foil"
+        ],
+        "problem_ids": [
+          "PRB-0001",
+          "PRB-0002",
+          "PRB-0003",
+          "PRB-0004",
+          "PRB-0005",
+          "PRB-0006"
+        ],
+        "tier1": [
+          "Google Calendar *",
+          "Google Business Profile *",
+          "WhatsApp Business app *",
+          "Sheet of product lines (colour, foil, shampoo) *",
+          "Apple Calendar if that is their phone"
+        ],
+        "tier3_candidates": [
+          "Fresha",
+          "Booksy",
+          "Treatwell",
+          "Phorest",
+          "Salon Iris",
+          "Mailchimp-class mail"
+        ],
+        "minimum_path": [
+          "Mon  Hours honest on Google",
+          "Mon  WhatsApp Business app on the owner's phone",
+          "Tue  Reminder text the day before (from their diary)",
+          "Tue  Sheet of colour / foil / shampoo + a number that means 'reorder'",
+          "Wed  Card machine unchanged",
+          "Fri  Reply to any waiting Google review in their voice"
+        ],
+        "brand_intake": [
+          "Photo of the real shop",
+          "Languages at the desk",
+          "Three words they would never put in Comic Sans",
+          "What a Canva salon page would get wrong"
+        ],
+        "stan_lee_test": "Generic salon template fails. Logo-swap test. No stock photos of smiling strangers.",
+        "eng_0002_rule": "on — the sale is an appointment",
+        "out_of_scope": [],
+        "overlay": "HVT-0006-OVL-0001",
+        "card_document": "governance/HVT-0006_Industry_and_Compatibility_Taxonomy.md §2.3",
+        "card_version": "1.0",
+        "complexity_score_method": "DR-2026-11-20-07 §7 (computed: 2)"
+      },
+      "note": "HVT-0004 v0.1 has no status vocabulary for Business Type; 'Registered' is descriptive only.",
+      "card_status": "Registered instance / live template type — overlay HVT-0006-OVL-0001 v1.0 Approved"
+    },
+    {
+      "id": "BUT-0002",
+      "class": "Business Type",
+      "name": "Central / Eastern European grocer-deli",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Approved card (DR-2026-09-04-14) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0002",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Retail",
+      "market_industry_prose": "Food & household import retail",
+      "problem_ids_on_card": [
+        "PRB-0007",
+        "PRB-0008",
+        "PRB-0009",
+        "PRB-0010",
+        "PRB-0011"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0002); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Food & household import retail (via MKT-0002, under SEC-0002 Retail)",
+        "business_model": "Counter + basket; sometimes a small hot-food / bakery case; rarely delivery as the main trade",
+        "classify_keywords": [
+          "polish",
+          "romanian",
+          "lithuanian",
+          "bulgarian",
+          "eastern european",
+          "central european",
+          "deli",
+          "pierogi",
+          "kielbasa",
+          "import counter",
+          "grocer-deli"
+        ],
+        "problem_ids": [
+          "PRB-0007",
+          "PRB-0008",
+          "PRB-0009",
+          "PRB-0010",
+          "PRB-0011"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Customer records — regulars and families",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Payment processing — card they already use",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Stock / reorder alerts",
+            "covered_by": null,
+            "path": "DR-10 path: S1 Square alerts if already on Square; else S3 sheet + WhatsApp/email to the owner's phone (DOC-0006 v1.0)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null,
+            "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+          },
+          {
+            "name": "Product names in the owner's language",
+            "covered_by": null,
+            "path": "Google Sheet of SKUs in their language — Customer Asset (Art. VIII); procedure, not an Engine",
+            "foundry_engine": null
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "path": "GBP read + reply in the owner's voice; WhatsApp Business private follow-up; never auto-reply (DOC-0007 v1.0)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null
+          },
+          {
+            "name": "Trays / cakes to order",
+            "covered_by": "ENG-0002",
+            "path": "conditional — only if they take orders"
+          },
+          {
+            "name": "Supplier price / pack-size changes",
+            "covered_by": null,
+            "path": "GAP — supplier lists we are not allowed to scrape; owner's own notes only"
+          },
+          {
+            "name": "Community calendar (Polish / Orthodox / national days)",
+            "covered_by": null,
+            "path": "GAP — owner sets honest hours on GBP; no calendar product"
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "conditional — trays / cakes to order only",
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Google Sheet of SKUs in their language *",
+          "WhatsApp Business app *",
+          "Google Business Profile (name in their language) *",
+          "Companies House (optional, free)"
+        ],
+        "tier3_candidates": [],
+        "minimum_path": [
+          "Mon  GBP hours honest, shop name in their language",
+          "Mon  WhatsApp Business app on the owner's phone",
+          "Tue  Sheet of the twenty lines that run out, in their language, + reorder number",
+          "Wed  Till and card unchanged",
+          "Fri  Reply to any waiting review in their voice"
+        ],
+        "brand_intake": [
+          "Photo of the actual fascia",
+          "Languages spoken at the counter",
+          "Three product names that must stay un-anglicised (owner picks)",
+          "Brands they are proud to show",
+          "What must never look like a London template grocer"
+        ],
+        "stan_lee_test": "If you can swap the logo and it becomes 'European Mini Mart #14', reject.",
+        "out_of_scope": [
+          "Scraping supplier price lists"
+        ],
+        "deployment_targets": [
+          "Phone",
+          "Tablet"
+        ],
+        "pricing_bands": [
+          "Basic"
+        ],
+        "time_to_deploy": "same week (minimum path)",
+        "complexity_score": 3,
+        "overlay": "HVT-0006-OVL-0002",
+        "card_document": "governance/BUT-0002_CEE_grocer_deli.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "BUT-0003",
+      "class": "Business Type",
+      "name": "Neighbourhood grocery with owner-stated dietary / trust rules",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0003"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Approved card (DR-2026-09-04-14) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0003",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Retail",
+      "market_industry_prose": "Neighbourhood grocery",
+      "problem_ids_on_card": [
+        "PRB-0012",
+        "PRB-0013",
+        "PRB-0014",
+        "PRB-0015",
+        "PRB-0007"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0003); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Neighbourhood grocery (via MKT-0003, under SEC-0002 Retail)",
+        "business_model": "Counter retail; the owner's trust rule is part of the offer, in the owner's words",
+        "classify_keywords": [
+          "halal",
+          "kosher",
+          "trust rule",
+          "slaughter",
+          "dietary",
+          "who is the supplier",
+          "neighbourhood grocery",
+          "grocery"
+        ],
+        "problem_ids": [
+          "PRB-0012",
+          "PRB-0013",
+          "PRB-0014",
+          "PRB-0015",
+          "PRB-0007"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Customer records — families, not just ticket names",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Payment processing — existing card / cash",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Stock / reorder alerts",
+            "covered_by": null,
+            "path": "DR-10 path: S1 Square alerts if already on Square; else S3 sheet + WhatsApp/email to the owner's phone (DOC-0006 v1.0) — sheet carries an owner-controlled 'rule / mark' column",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null,
+            "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+          },
+          {
+            "name": "Owner-stated trust rule, stored verbatim",
+            "covered_by": null,
+            "path": "Owner record + sheet column in the owner's sentence. Foundry stores it; Foundry never certifies it",
+            "foundry_engine": null
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "path": "GBP read + reply in the owner's voice; WhatsApp Business private follow-up; never auto-reply (DOC-0007 v1.0) — plus: never auto-reply a trust complaint; the owner speaks (Art. X)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null
+          },
+          {
+            "name": "Hours around the community calendar",
+            "covered_by": null,
+            "path": "GBP hours kept honest by the owner; GAP: no non-UK-bank-holiday calendar product"
+          },
+          {
+            "name": "Pre-orders / catering",
+            "covered_by": "ENG-0002",
+            "path": "default OFF"
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "default off — pre-order / catering only",
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Sheet with a 'rule / mark' column the owner controls *",
+          "WhatsApp Business app (human replies) *",
+          "Google Business Profile — hours kept honest *"
+        ],
+        "tier3_candidates": [],
+        "minimum_path": [
+          "Mon  GBP hours honest, including community-calendar changes",
+          "Mon  WhatsApp Business app (human replies)",
+          "Tue  Sheet with the owner's 'rule / mark' column + reorder number",
+          "Wed  Till and payments unchanged",
+          "Fri  Owner replies to any waiting review; never auto-reply a trust complaint"
+        ],
+        "brand_intake": [
+          "Fascia photo",
+          "The trust rule in one sentence, owner's words",
+          "Languages",
+          "Three product names that must not be 'translated away'",
+          "What a generic 'world food' template would get wrong"
+        ],
+        "stan_lee_test": "No stock-photo prayer, no stock-photo spice pile, no 'exotic' copy. If the rule is not in the owner's sentence, reject.",
+        "out_of_scope": [
+          "Certifying halal / slaughter / any trust rule — Foundry stores the owner's sentence only"
+        ],
+        "deployment_targets": [
+          "Phone",
+          "Tablet"
+        ],
+        "pricing_bands": [
+          "Basic"
+        ],
+        "time_to_deploy": "same week (minimum path)",
+        "complexity_score": 3,
+        "overlay": "HVT-0006-OVL-0003",
+        "card_document": "governance/BUT-0003_neighbourhood_grocery_trust_rules.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "BUT-0004",
+      "class": "Business Type",
+      "name": "Independent specialist retailer",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0004"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Approved card (DR-2026-09-04-14) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0004",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Retail",
+      "market_industry_prose": "Specialist goods",
+      "problem_ids_on_card": [
+        "PRB-0016",
+        "PRB-0017",
+        "PRB-0018",
+        "PRB-0019",
+        "PRB-0005"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0004); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Specialist goods (via MKT-0004, under SEC-0002 Retail)",
+        "business_model": "Counter + advice; sometimes appointments for long jobs (bridal, repair, colour match); sometimes mail to regulars",
+        "classify_keywords": [
+          "specialist",
+          "fabric",
+          "records",
+          "vinyl",
+          "tools",
+          "phone parts",
+          "phone repair",
+          "bridal",
+          "books",
+          "hair and beauty supply",
+          "craft"
+        ],
+        "problem_ids": [
+          "PRB-0016",
+          "PRB-0017",
+          "PRB-0018",
+          "PRB-0019",
+          "PRB-0005"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Customer records — the regular who asks for a brand",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Payment processing — existing card",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Stock / reorder alerts",
+            "covered_by": null,
+            "path": "DR-10 path: S1 Square alerts if already on Square; else S3 sheet + WhatsApp/email to the owner's phone (DOC-0006 v1.0) — for the lines they bother to list (phone camera + sheet)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null,
+            "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Appointments (repair slot, fitting)",
+            "covered_by": "ENG-0002",
+            "path": "ON when the sale is an appointment, OFF when walk-in"
+          },
+          {
+            "name": "Shipment-landed message to regulars",
+            "covered_by": "ENG-0001",
+            "path": "ENG-0001 + WhatsApp Business — procedure, not an Engine"
+          },
+          {
+            "name": "Public surface that is not a template",
+            "covered_by": null,
+            "path": "Brand Intake + Stan Lee veto (Design), not an Engine"
+          },
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "path": "GBP read + reply in the owner's voice; WhatsApp Business private follow-up; never auto-reply (DOC-0007 v1.0)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "filter — on if appointments, off if walk-in",
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Phone camera + sheet of what is actually on the shelf *",
+          "WhatsApp Business app *",
+          "Google Business Profile *",
+          "Companies House (optional)"
+        ],
+        "tier3_candidates": [],
+        "minimum_path": [
+          "Mon  GBP hours honest + the sentence they say when someone walks in",
+          "Mon  WhatsApp Business app",
+          "Tue  Sheet (and phone photos) of what is actually on the shelf",
+          "Wed  Payments unchanged; Instagram stays theirs (Art. VIII)",
+          "Fri  'The good shipment landed' message to regulars who asked"
+        ],
+        "brand_intake": [
+          "Fascia and one photo of the real counter",
+          "Three brands they would be ashamed to see next to fake stock photography",
+          "Whether they take appointments",
+          "The sentence they say when someone walks in"
+        ],
+        "stan_lee_test": "Logo-swap test. Inter-and-teal test. Manus / Canva 'boutique template' fails.",
+        "out_of_scope": [
+          "Taking the owner's Instagram account"
+        ],
+        "deployment_targets": [
+          "Phone",
+          "Tablet",
+          "PWA"
+        ],
+        "pricing_bands": [
+          "Basic",
+          "Professional"
+        ],
+        "time_to_deploy": "same week (minimum path)",
+        "complexity_score": 2,
+        "overlay": "HVT-0006-OVL-0004",
+        "card_document": "governance/BUT-0004_independent_specialist_retailer.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "BUT-0005",
+      "class": "Business Type",
+      "name": "Independent high-street retail",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0005"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft card (pending Raj + Stan Lee) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0005",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Retail",
+      "market_industry_prose": "Independent goods retail",
+      "problem_ids_on_card": [
+        "PRB-0020",
+        "PRB-0021",
+        "PRB-0022",
+        "PRB-0023",
+        "PRB-0007"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0005); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Independent goods retail (via MKT-0005, under SEC-0002 Retail)",
+        "business_model": "Walk-in basket; optional click-and-collect",
+        "classify_keywords": [
+          "shop",
+          "gifts",
+          "household",
+          "fashion",
+          "convenience",
+          "boutique",
+          "retail",
+          "till"
+        ],
+        "routing_rule": "Use BUT-0002 if a food-import counter; BUT-0003 if the owner states a trust rule; BUT-0004 if craft knowledge is the product; else BUT-0005. Never double-card (DR-2026-11-20-08 §3).",
+        "problem_ids": [
+          "PRB-0020",
+          "PRB-0021",
+          "PRB-0022",
+          "PRB-0023",
+          "PRB-0007"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Customer records — regulars",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Payment processing — payments they have",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Stock / reorder alerts",
+            "covered_by": null,
+            "path": "DR-10 path: S1 Square alerts if already on Square; else S3 sheet + WhatsApp/email to the owner's phone (DOC-0006 v1.0) — the twenty lines that actually run out",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null,
+            "eng_0005": "authorised on trigger (DR-2026-11-20-05)"
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Click-and-collect",
+            "covered_by": null,
+            "path": "Tier 3 candidate only if they already sell online (Shopify-class); else GAP"
+          },
+          {
+            "name": "Appointments (personal shopping, repairs)",
+            "covered_by": "ENG-0002",
+            "path": "OFF unless they do appointments"
+          },
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "path": "GBP read + reply in the owner's voice; WhatsApp Business private follow-up; never auto-reply (DOC-0007 v1.0)",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "off unless appointments (personal shopping, repairs)",
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Spreadsheet stock list *",
+          "Google Business Profile *",
+          "WhatsApp Business app *",
+          "Open-source POS if they will self-host"
+        ],
+        "tier3_candidates": [
+          "Shopify POS",
+          "Lightspeed",
+          "Toast-class (only if food)"
+        ],
+        "minimum_path": [
+          "Mon  Keep their till; GBP hours honest",
+          "Mon  WhatsApp for regulars",
+          "Tue  Sheet of the twenty lines that actually run out",
+          "Wed  Quote optional: Square inventory only if they already take Square; Shopify only if they already sell online",
+          "Fri  Reply to any waiting review in their voice"
+        ],
+        "brand_intake": [
+          "Fascia photo",
+          "Photo of the real counter",
+          "What three website builders got wrong for them"
+        ],
+        "stan_lee_test": "Logo-swap / Inter-teal / fake lifestyle stock. Reject.",
+        "out_of_scope": [],
+        "deployment_targets": [
+          "Phone",
+          "Tablet",
+          "PWA"
+        ],
+        "pricing_bands": [
+          "Basic",
+          "Professional"
+        ],
+        "time_to_deploy": "same week (minimum path)",
+        "complexity_score": 2,
+        "overlay": "HVT-0006-OVL-0005",
+        "card_document": "governance/BUT-0005_independent_high_street_retail.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "BUT-0006",
+      "class": "Business Type",
+      "name": "Local clinic / practitioner rooms",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft card (pending Raj + Stan Lee) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0006",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Services",
+      "market_industry_prose": "Local health & care rooms",
+      "problem_ids_on_card": [
+        "PRB-0024",
+        "PRB-0025",
+        "PRB-0026",
+        "PRB-0027",
+        "PRB-0028"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0002",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0006); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Local health & care rooms (via MKT-0006, under SEC-0001 Services)",
+        "business_model": "Appointment + fee; packages / courses of treatment common",
+        "classify_keywords": [
+          "clinic",
+          "physio",
+          "physiotherapy",
+          "dentist",
+          "dental",
+          "osteopath",
+          "practitioner",
+          "patients",
+          "patient",
+          "treatment",
+          "counselling",
+          "aesthetic",
+          "therapy"
+        ],
+        "problem_ids": [
+          "PRB-0024",
+          "PRB-0025",
+          "PRB-0026",
+          "PRB-0027",
+          "PRB-0028"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Appointment booking + reminders",
+            "covered_by": "ENG-0002",
+            "path": "or their existing clinic suite — do not rip it out (Art. VIII)"
+          },
+          {
+            "name": "People / recall list",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Payments / packages",
+            "covered_by": "ENG-0003",
+            "path": "on the account they already have"
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Review & reply management",
+            "covered_by": null,
+            "path": "GBP read + reply in the owner's voice; WhatsApp Business private follow-up; never auto-reply (DOC-0007 v1.0) — owner replies; no clinical content in any reply",
+            "search": "DR-2026-09-04-10",
+            "search_result": "PARTIAL MATCH",
+            "foundry_engine": null
+          },
+          {
+            "name": "Consumables stock (needles, product)",
+            "covered_by": null,
+            "path": "DR-10 path (DOC-0006) — not a clinic ERP, not ENG-0005"
+          },
+          {
+            "name": "Clinical / medical records",
+            "covered_by": null,
+            "path": "OUT OF SCOPE — clinician's lawful system only (Art. VIII, X)",
+            "out_of_scope_by_law": true
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0002",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "on — time is the stock",
+        "integrations": [
+          "INT-0001",
+          "INT-0002",
+          "INT-0003",
+          "INT-0004",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Google Calendar *",
+          "Google Business Profile *",
+          "WhatsApp Business app (human, never clinical advice) *"
+        ],
+        "tier3_candidates": [
+          "Cliniko",
+          "Jane",
+          "Mindbody",
+          "Fresha",
+          "Dentally",
+          "Phorest-class clinic suites"
+        ],
+        "minimum_path": [
+          "Mon  Keep their notes system (clinical records never move)",
+          "Mon  ENG-0002 or their existing clinic suite for slots",
+          "Tue  Reminders on a channel they already read",
+          "Wed  Payments on the account they already have",
+          "Fri  GBP hours + owner replies to reviews (no clinical content)"
+        ],
+        "brand_intake": [
+          "Photo of their actual rooms",
+          "Languages at reception",
+          "What a 'wellness serenity' template would get wrong"
+        ],
+        "stan_lee_test": "No stock-photo white coats, no fake five-star row, no 'wellness serenity' template. Rooms look like their rooms. Never design a clinical-notes UI.",
+        "out_of_scope": [
+          "Clinical / medical records (lawful system only)",
+          "Insurance / NHS pathways (unless a Search)",
+          "Clinical advice on WhatsApp"
+        ],
+        "deployment_targets": [
+          "Tablet",
+          "Phone",
+          "Web"
+        ],
+        "pricing_bands": [
+          "Basic",
+          "Professional"
+        ],
+        "time_to_deploy": "1–2 weeks (consent + reminders)",
+        "complexity_score": 2,
+        "overlay": "HVT-0006-OVL-0006",
+        "card_document": "governance/BUT-0006_local_clinic_practitioner_rooms.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "BUT-0007",
+      "class": "Business Type",
+      "name": "Carpenter / small building trades",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "MKT-0007"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Draft card (pending Raj + Stan Lee) v0.1 → Approved card v1.0",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "authority": "DR-2026-09-04-12",
+      "source_document": "BUT-0007",
+      "card_status": "Approved card v1.0 — classification only; no live instance (DR-2026-11-20-10). Stan Lee Design review deferred, not waived",
+      "live_instance": null,
+      "sector_prose": "Trades",
+      "market_industry_prose": "Building & joinery",
+      "problem_ids_on_card": [
+        "PRB-0029",
+        "PRB-0030",
+        "PRB-0031",
+        "PRB-0032",
+        "PRB-0033"
+      ],
+      "recommended_engines_on_card": [
+        "ENG-0001",
+        "ENG-0002",
+        "ENG-0003"
+      ],
+      "note": "Sector / Market Industry minted (MKT-0007); problems minted as graph objects (DR-2026-11-20-08).",
+      "card": {
+        "sector": "Building & joinery (via MKT-0007, under SEC-0003 Trades)",
+        "business_model": "Quoted job + deposit + schedule; some day-rate; some small retail of offcuts / furniture if they have a shop",
+        "classify_keywords": [
+          "carpenter",
+          "joiner",
+          "joinery",
+          "builder",
+          "kitchen fitter",
+          "van",
+          "decking",
+          "trade",
+          "fitter",
+          "site"
+        ],
+        "problem_ids": [
+          "PRB-0029",
+          "PRB-0030",
+          "PRB-0031",
+          "PRB-0032",
+          "PRB-0033"
+        ],
+        "required_capabilities": [
+          {
+            "name": "Customers / sites",
+            "covered_by": "ENG-0001"
+          },
+          {
+            "name": "Survey / fit-day slots",
+            "covered_by": "ENG-0002"
+          },
+          {
+            "name": "Deposits and balances",
+            "covered_by": "ENG-0003"
+          },
+          {
+            "name": "Quote → accept → deposit → schedule",
+            "covered_by": null,
+            "path": "Procedure; Workflow candidate (WKF-), not an Engine",
+            "foundry_engine": null
+          }
+        ],
+        "optional_capabilities": [
+          {
+            "name": "Job photos",
+            "covered_by": null,
+            "path": "Google Drive folder per job — photos stay the owner's (Art. VIII)"
+          },
+          {
+            "name": "Timber / ironmongery stock",
+            "covered_by": null,
+            "path": "DR-10 path: merchant account + sheet (ENG-0005 on trigger only)"
+          },
+          {
+            "name": "Which jobs made money",
+            "covered_by": null,
+            "path": "GAP — site costing / CIS / multi-crew ERP not session 1"
+          }
+        ],
+        "recommended_engines": [
+          "ENG-0001",
+          "ENG-0002",
+          "ENG-0003"
+        ],
+        "eng_0002_rule": "on — survey and fit days",
+        "integrations": [
+          "INT-0001",
+          "INT-0003",
+          "INT-0004",
+          "INT-0005"
+        ],
+        "tier1": [
+          "Google Calendar *",
+          "Google Drive folder per job for photos *",
+          "Spreadsheet job list *",
+          "Open-source job-ticket tools (only if they will open them)"
+        ],
+        "tier3_candidates": [
+          "ServiceTitan",
+          "Jobber",
+          "Buildertrend",
+          "Houzz Pro",
+          "Checkatrade (lead door — warn lock-in)",
+          "MyBuilder (lead door — warn lock-in)"
+        ],
+        "minimum_path": [
+          "Mon  One job record: who, where, quote, deposit, dates",
+          "Mon  Calendar they already have",
+          "Tue  Payments they already have (deposit link)",
+          "Wed  Drive folder per job for photos",
+          "Fri  GBP with real photos of THEIR work"
+        ],
+        "brand_intake": [
+          "Their last job",
+          "Their hands at work",
+          "Their van signwriting"
+        ],
+        "stan_lee_test": "No stock decking at sunset. Their last job, their hands, their van signwriting. Else reject.",
+        "out_of_scope": [
+          "Full site costing / CIS / multi-crew ERP in session 1"
+        ],
+        "deployment_targets": [
+          "Phone"
+        ],
+        "pricing_bands": [
+          "Basic"
+        ],
+        "time_to_deploy": "same week (minimum path)",
+        "complexity_score": 2,
+        "overlay": "HVT-0006-OVL-0007",
+        "card_document": "governance/BUT-0007_carpenter_small_building_trades.md",
+        "card_version": "1.0"
+      }
+    },
+    {
+      "id": "INT-0001",
+      "class": "Integration",
+      "name": "Stripe",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Payments",
+        "open_source": false,
+        "monthly_cost": "None (transaction fees apply)",
+        "countries_supported": "170+",
+        "features": [
+          "Subscriptions",
+          "Invoices",
+          "Tax"
+        ],
+        "compatible_engines": [
+          "ENG-0003"
+        ],
+        "alternatives": [
+          "INT-0002",
+          "PayPal",
+          "Adyen"
+        ],
+        "provenance": "Howard-supplied, 2026-08-04"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0002",
+      "class": "Integration",
+      "name": "Square",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Payments + Point of Sale",
+        "open_source": false,
+        "monthly_cost": "None (transaction fees apply); paid tiers for advanced POS features",
+        "countries_supported": "~8 (incl. US, UK, Canada, Australia, Ireland, France, Spain, Japan)",
+        "features": [
+          "In-person POS",
+          "Online checkout",
+          "Invoices",
+          "Loyalty add-on"
+        ],
+        "compatible_engines": [
+          "ENG-0003"
+        ],
+        "alternatives": [
+          "INT-0001",
+          "PayPal",
+          "SumUp"
+        ],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0003",
+      "class": "Integration",
+      "name": "Google Calendar",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Scheduling",
+        "open_source": false,
+        "monthly_cost": "Free (business tiers via Google Workspace)",
+        "countries_supported": "Global",
+        "features": [
+          "Appointment sync",
+          "Reminders",
+          "Shared calendars"
+        ],
+        "compatible_engines": [
+          "ENG-0002"
+        ],
+        "alternatives": [
+          "INT-0004"
+        ],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0004",
+      "class": "Integration",
+      "name": "Apple Calendar",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Scheduling",
+        "open_source": false,
+        "monthly_cost": "Free",
+        "countries_supported": "Global (iCloud accounts)",
+        "features": [
+          "Appointment sync",
+          "Reminders"
+        ],
+        "compatible_engines": [
+          "ENG-0002"
+        ],
+        "alternatives": [
+          "INT-0003"
+        ],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0005",
+      "class": "Integration",
+      "name": "WhatsApp Business",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Messaging",
+        "open_source": false,
+        "monthly_cost": "Free (app); paid tiers via WhatsApp Business Platform for automation at scale",
+        "countries_supported": "Global",
+        "features": [
+          "Booking confirmations",
+          "Reminders",
+          "Customer chat"
+        ],
+        "compatible_engines": [
+          "ENG-0001",
+          "ENG-0002"
+        ],
+        "alternatives": [],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0006",
+      "class": "Integration",
+      "name": "Xero",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Accounting",
+        "open_source": false,
+        "monthly_cost": "Paid subscription (tiered)",
+        "countries_supported": "Primarily UK, AU, NZ, US, with broader multi-currency support",
+        "features": [
+          "Invoicing",
+          "Bank reconciliation",
+          "Payroll add-on",
+          "Tax reporting"
+        ],
+        "compatible_engines": [
+          "ENG-0003"
+        ],
+        "alternatives": [
+          "INT-0007"
+        ],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "INT-0007",
+      "class": "Integration",
+      "name": "QuickBooks",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [
+        {
+          "date": "2026-11-20",
+          "change": "Registered → Superseded",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "authority": "DR-2026-08-04-04",
+      "source_document": "HVT-0006",
+      "card": {
+        "category": "Accounting",
+        "open_source": false,
+        "monthly_cost": "Paid subscription (tiered)",
+        "countries_supported": "Primarily US, UK, Canada, Australia",
+        "features": [
+          "Invoicing",
+          "Bank reconciliation",
+          "Payroll add-on",
+          "Tax reporting"
+        ],
+        "compatible_engines": [
+          "ENG-0003"
+        ],
+        "alternatives": [
+          "INT-0006"
+        ],
+        "provenance": "Architecture Office estimate — unverified, confirm before production use"
+      },
+      "note": "Retained unedited as historical record; superseded by the matching SLC- object (HVT-0007 §3.1)."
+    },
+    {
+      "id": "SLC-0001",
+      "class": "Solution Component",
+      "name": "Stripe",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0001"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Stripe",
+      "category": "Payments",
+      "licence": "Proprietary",
+      "pricing_model": "Transaction",
+      "supported_countries": "46 (stripe.com, checked 2026-09-25)",
+      "compatible_engines": [
+        "ENG-0003"
+      ],
+      "deployment_method": "~5 minutes to enable",
+      "support_level": "Standard",
+      "partner_status": "Public Integration (“Official” retired, DR-2026-11-20-09)",
+      "tier": 3,
+      "id_provenance": "explicit in HVT-0007 §5.1",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0002",
+      "class": "Solution Component",
+      "name": "Square",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Square",
+      "category": "Payments + Point of Sale",
+      "licence": "Proprietary",
+      "pricing_model": "Transaction; paid tiers",
+      "supported_countries": "carried from INT-0002",
+      "compatible_engines": [
+        "ENG-0003"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "explicit in DR-2026-09-04-10 (“Square (SLC-0002)”)",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0003",
+      "class": "Solution Component",
+      "name": "Google Calendar",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0003"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Google",
+      "category": "Scheduling",
+      "licence": "Proprietary",
+      "pricing_model": "Free; business tiers via Google Workspace",
+      "supported_countries": "carried from INT-0003",
+      "compatible_engines": [
+        "ENG-0002"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "inferred from list order in HVT-0007 §5.2 — confirm",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0004",
+      "class": "Solution Component",
+      "name": "Apple Calendar",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0004"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Apple",
+      "category": "Scheduling",
+      "licence": "Proprietary",
+      "pricing_model": "Free",
+      "supported_countries": "carried from INT-0004",
+      "compatible_engines": [
+        "ENG-0002"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "inferred from list order in HVT-0007 §5.2 — confirm",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0005",
+      "class": "Solution Component",
+      "name": "WhatsApp Business",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0005"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Meta",
+      "category": "Messaging",
+      "licence": "Proprietary",
+      "pricing_model": "Free app; per-message Platform",
+      "supported_countries": "carried from INT-0005",
+      "compatible_engines": [
+        "ENG-0001",
+        "ENG-0002"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "inferred from list order in HVT-0007 §5.2 — confirm",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0006",
+      "class": "Solution Component",
+      "name": "Xero",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Xero",
+      "category": "Accounting",
+      "licence": "Proprietary",
+      "pricing_model": "Subscription (tiered)",
+      "supported_countries": "carried from INT-0006",
+      "compatible_engines": [
+        "ENG-0003"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "inferred from list order in HVT-0007 §5.2 — confirm",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "UK payroll is included from the Grow plan, not an add-on (DR-2026-09-25-04)."
+    },
+    {
+      "id": "SLC-0007",
+      "class": "Solution Component",
+      "name": "QuickBooks",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "INT-0007"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Intuit",
+      "category": "Accounting",
+      "licence": "Proprietary",
+      "pricing_model": "Subscription (tiered)",
+      "supported_countries": "carried from INT-0007",
+      "compatible_engines": [
+        "ENG-0003"
+      ],
+      "deployment_method": null,
+      "support_level": null,
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "SLC-0007 confirmed (DR-2026-11-20-09); every field still unverified",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SLC-0008",
+      "class": "Solution Component",
+      "name": "Apple Pay",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-05",
+      "source_document": "HVT-0007",
+      "vendor": "Apple",
+      "category": "Payments",
+      "licence": "Proprietary",
+      "pricing_model": "Transaction (via underlying payment processor; Apple itself does not charge merchants directly for Apple Pay)",
+      "supported_countries": "101 countries and regions (Apple list published 2026-09-09; DR-2026-09-25-04)",
+      "supported_industries": [
+        "Retail",
+        "Restaurant",
+        "Salon",
+        "Hotels",
+        "Healthcare"
+      ],
+      "compatible_engines": [
+        "ENG-0003"
+      ],
+      "deployment_method": "SDK / StoreKit integration — not a standalone flow like Stripe Checkout",
+      "support_level": "Standard",
+      "partner_status": "Public Integration",
+      "tier": 3,
+      "id_provenance": "explicit in HVT-0007 §5.3",
+      "fact_check": "DR-2026-09-25-04",
+      "fact_check_applied": "DR-2026-09-25-04 findings applied (DR-2026-11-20-09)"
+    },
+    {
+      "id": "SES-0001",
+      "class": "Customer Session",
+      "name": "Template session — BUT-0001 schema validation",
+      "owner": "Architecture Office",
+      "status": "Open",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-08-04-09",
+      "source_document": "DR-2026-08-04-09",
+      "project_id_or_business_type_id": "BUT-0001",
+      "date": null,
+      "location": null,
+      "linked_wishes": [
+        "WSH-0001"
+      ],
+      "notes": "Schema-validation template, not a real interaction.",
+      "template": true,
+      "status_note": "Status not stated in DR-2026-08-04-09; 'Open' used as the first rung of the proposed vocabulary — flagged."
+    },
+    {
+      "id": "WSH-0001",
+      "class": "Customer Wish",
+      "name": "Owner wants stock alerts on phone",
+      "owner": "Architecture Office",
+      "status": "Configured",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-09-04-10",
+      "source_document": "DR-2026-08-04-09",
+      "session_id": "SES-0001",
+      "description": "Owner wants stock alerts on phone (templated from the object's name, not a customer quote)",
+      "priority": null,
+      "linked_problems": [
+        "PRB-0004"
+      ],
+      "linked_capabilities": "Stock / inventory tracking (mobile notifications)",
+      "resolution": "DR-2026-09-04-10",
+      "status_prose": "Configured (awaiting owner plan: Square vs sheet)",
+      "customer_asset_flag": true,
+      "template": true
+    },
+    {
+      "id": "DR-2026-08-04-01",
+      "class": "Decision",
+      "name": "Resolve ENG-0003 Dependency Gap",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-01"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-01",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-02",
+      "class": "Decision",
+      "name": "Reserve and Define ENG-0001 and ENG-0002",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-02",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-03",
+      "class": "Decision",
+      "name": "Adopt HVT-0006 and Register ENG-0004",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-03"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-03",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-04",
+      "class": "Decision",
+      "name": "Article XIV and HVT-0006 v0.2",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-04"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-04",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-05",
+      "class": "Decision",
+      "name": "Marketplace Layer, SLC migration, Article VI.4",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-05"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-05",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-06",
+      "class": "Decision",
+      "name": "Customer Feedback & Wish Loop",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-06"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-06",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-07",
+      "class": "Decision",
+      "name": "Field-level schemas for Customer Wish / Session",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-07"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-07",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-08",
+      "class": "Decision",
+      "name": "Register DOC-0005",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-08"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-08",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-08-04-09",
+      "class": "Decision",
+      "name": "First template instances SES-0001, WSH-0001",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Chief Architect",
+          "date": "2026-08-04",
+          "decision_ref": "DR-2026-08-04-09"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-08-04-09",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-09-04-10",
+      "class": "Decision",
+      "name": "Engine Search (Art. II) for Stock and Review on BUT-0001",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Raj (CEO Office)",
+          "date": "2026-09-04",
+          "decision_ref": "DR-2026-09-04-10"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-04-10",
+      "document_status": "Approved",
+      "search_results": [
+        {
+          "capability": "Stock / inventory tracking",
+          "business_type": "BUT-0001",
+          "result": "PARTIAL MATCH",
+          "new_engine": null
+        },
+        {
+          "capability": "Review & reply management",
+          "business_type": "BUT-0001",
+          "result": "PARTIAL MATCH",
+          "new_engine": null
+        }
+      ]
+    },
+    {
+      "id": "DR-2026-09-04-10a",
+      "class": "Decision",
+      "name": "Apply Search outcomes to BUT-0001 / WSH-0001 (overlay)",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-10"
+        }
+      ],
+      "dependencies": [
+        "DR-2026-09-04-10"
+      ],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-04"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-04-10a",
+      "document_status": "Approved",
+      "approval_carried_by": "DR-2026-11-20-04"
+    },
+    {
+      "id": "DR-2026-09-04-11",
+      "class": "Decision",
+      "name": "Ratify DR-10; Stan Lee; Local Stock Ledger Search",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "1.1",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-04"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-04-11",
+      "document_status": "Superseded",
+      "approval_carried_by": "DR-2026-11-20-04"
+    },
+    {
+      "id": "DR-2026-09-04-12",
+      "class": "Decision",
+      "name": "Split stamp: Stan Lee (Design); queue types; HOLD ENG-0005",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "supersedes",
+          "target_id": "DR-2026-09-04-11",
+          "note": "execution-intent only"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Raj (CEO Office)",
+          "date": "2026-09-04",
+          "decision_ref": "DR-2026-09-04-12"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-04-12",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-09-04-14",
+      "class": "Decision",
+      "name": "Sign off BUT-0002 / 0003 / 0004 as Approved cards",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DR-2026-09-04-12"
+        }
+      ],
+      "dependencies": [
+        "DR-2026-09-04-12"
+      ],
+      "approvals": [
+        {
+          "approver": "Raj (CEO Office)",
+          "date": "2026-09-04",
+          "decision_ref": "DR-2026-09-04-14"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-04-14",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-09-25-01",
+      "class": "Decision",
+      "name": "Repository reconstruction from the 109-page PDF",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-01",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DR-2026-09-25-02",
+      "class": "Decision",
+      "name": "Foundry Kernel (HVT-0005) code written and tested",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-02",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DR-2026-09-25-03",
+      "class": "Decision",
+      "name": "Object graph built from BUT-0001 pilot data",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-03",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DR-2026-09-25-04",
+      "class": "Decision",
+      "name": "Solution Component vendor fact-check 2026-09-25",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-04",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DR-2026-09-25-05",
+      "class": "Decision",
+      "name": "Stock and Review capability specs (DOC-0006/0007) + HVT-0003 v0.5 Draft",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-05",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DR-2026-09-25-06",
+      "class": "Decision",
+      "name": "HVT-0004 v0.2 Draft — consolidated type extensions",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-06",
+      "document_status": "Approved",
+      "author": "AI executor (Grok Bot) drafting for Travis Lee Swift — HVT-0001 Art. V.1 labelling",
+      "reviewed_by": "pending — no Foundry office has reviewed this record",
+      "approval_carried_by": "DR-2026-11-20-02"
+    },
+    {
+      "id": "DOC-0010",
+      "class": "Asset",
+      "name": "QA Release Gate and Privacy Checklist",
+      "owner": "Architecture Office",
+      "status": "Prototype",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-02",
+      "source_document": "DOC-0010",
+      "asset_category": "Documentation",
+      "document_status": "Approved",
+      "owner_office": "Quality Assurance"
+    },
+    {
+      "id": "SEC-0002",
+      "class": "Sector",
+      "name": "Retail",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "SEC-0003",
+      "class": "Sector",
+      "name": "Trades",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0002",
+      "class": "Market Industry",
+      "name": "Food & household import retail",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0003",
+      "class": "Market Industry",
+      "name": "Neighbourhood grocery",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0004",
+      "class": "Market Industry",
+      "name": "Specialist goods",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0005",
+      "class": "Market Industry",
+      "name": "Independent goods retail",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0006",
+      "class": "Market Industry",
+      "name": "Local health & care rooms",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0001"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "MKT-0007",
+      "class": "Market Industry",
+      "name": "Building & joinery",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "classifies_under",
+          "target_id": "SEC-0003"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006"
+    },
+    {
+      "id": "PRB-0006",
+      "class": "Problem",
+      "name": "Reviews sit unanswered",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "HVT-0006",
+      "business_types": [
+        "BUT-0001"
+      ],
+      "keywords": [
+        "review",
+        "nasty comment",
+        "comment",
+        "star",
+        "rating"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0007",
+      "class": "Problem",
+      "name": "Run-out of what actually sells",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0002",
+      "business_types": [
+        "BUT-0002",
+        "BUT-0003",
+        "BUT-0005"
+      ],
+      "keywords": [
+        "run out",
+        "runs out",
+        "sold the last",
+        "out of stock",
+        "running out"
+      ],
+      "owner_words": "I don’t know what is about to run out until the regular asks and I’ve sold the last one."
+    },
+    {
+      "id": "PRB-0008",
+      "class": "Problem",
+      "name": "Software spells the products wrong",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0002",
+      "business_types": [
+        "BUT-0002"
+      ],
+      "keywords": [
+        "spell",
+        "english software",
+        "names wrong",
+        "recognising"
+      ],
+      "owner_words": "English software spells the products wrong and the customers stop recognising them."
+    },
+    {
+      "id": "PRB-0009",
+      "class": "Problem",
+      "name": "Supplier price and pack-size changes found on delivery",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0002",
+      "business_types": [
+        "BUT-0002"
+      ],
+      "keywords": [
+        "supplier",
+        "pack size",
+        "price change",
+        "delivery arrives"
+      ],
+      "owner_words": "Suppliers change price and pack size. I find out when the delivery arrives."
+    },
+    {
+      "id": "PRB-0010",
+      "class": "Problem",
+      "name": "Card, till and notebook don’t match",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0002",
+      "business_types": [
+        "BUT-0002"
+      ],
+      "keywords": [
+        "don't match",
+        "don’t match",
+        "notebook",
+        "end of week"
+      ],
+      "owner_words": "Card / till / notebook don’t match. End of week is a fight."
+    },
+    {
+      "id": "PRB-0011",
+      "class": "Problem",
+      "name": "Looks shut or generic online",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0002",
+      "business_types": [
+        "BUT-0002"
+      ],
+      "keywords": [
+        "looks shut",
+        "generic",
+        "walk past",
+        "online"
+      ],
+      "owner_words": "New people walk past because the shop looks shut or generic online. Regulars already know."
+    },
+    {
+      "id": "PRB-0012",
+      "class": "Problem",
+      "name": "One product wrong on the rule loses a family",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0003",
+      "business_types": [
+        "BUT-0003"
+      ],
+      "keywords": [
+        "wrong on the rule",
+        "the rule",
+        "halal",
+        "lose the family"
+      ],
+      "owner_words": "If one product is wrong on the rule, I lose the family, not one sale."
+    },
+    {
+      "id": "PRB-0013",
+      "class": "Problem",
+      "name": "Hours change around the community calendar",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0003",
+      "business_types": [
+        "BUT-0003"
+      ],
+      "keywords": [
+        "hours",
+        "ramadan",
+        "eid",
+        "community calendar",
+        "google still shows"
+      ],
+      "owner_words": "Hours change around community calendar. Google still shows last winter."
+    },
+    {
+      "id": "PRB-0014",
+      "class": "Problem",
+      "name": "Which lines may sit next to which",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0003",
+      "business_types": [
+        "BUT-0003"
+      ],
+      "keywords": [
+        "next to which",
+        "next to",
+        "which lines"
+      ],
+      "owner_words": "I need to know which lines I can put next to which. A normal stock app doesn’t care."
+    },
+    {
+      "id": "PRB-0015",
+      "class": "Problem",
+      "name": "Reviews and rumours travel faster than the star",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0003",
+      "business_types": [
+        "BUT-0003"
+      ],
+      "keywords": [
+        "rumour",
+        "rumours",
+        "review",
+        "word of mouth"
+      ],
+      "owner_words": "Reviews and rumours travel in the community faster than the Google star."
+    },
+    {
+      "id": "PRB-0016",
+      "class": "Problem",
+      "name": "Stock found only when the customer is standing there",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0004",
+      "business_types": [
+        "BUT-0004"
+      ],
+      "keywords": [
+        "box i forgot",
+        "forgot i had",
+        "standing there",
+        "find out when"
+      ],
+      "owner_words": "The thing a customer wants is in a box I forgot I had, or it isn’t, and I only find out when they are standing there."
+    },
+    {
+      "id": "PRB-0017",
+      "class": "Problem",
+      "name": "Brands look cheap on a template page",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0004",
+      "business_types": [
+        "BUT-0004"
+      ],
+      "keywords": [
+        "canva",
+        "look cheap",
+        "template"
+      ],
+      "owner_words": "My brands look cheap if the page looks like Canva."
+    },
+    {
+      "id": "PRB-0018",
+      "class": "Problem",
+      "name": "No time to keep a site",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0004",
+      "business_types": [
+        "BUT-0004"
+      ],
+      "keywords": [
+        "no time",
+        "keep a site",
+        "website",
+        "know i am open"
+      ],
+      "owner_words": "I have no time to keep a site, but I need people to know I am open and what I know."
+    },
+    {
+      "id": "PRB-0019",
+      "class": "Problem",
+      "name": "Empty midweek; regulars not told when the shipment lands",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0004",
+      "business_types": [
+        "BUT-0004"
+      ],
+      "keywords": [
+        "midweek",
+        "shipment",
+        "landed"
+      ],
+      "owner_words": "Empty midweek. Regulars don’t get told when the good shipment landed."
+    },
+    {
+      "id": "PRB-0020",
+      "class": "Problem",
+      "name": "Empty midweek / no idea who came in last month",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "family_of",
+          "target_id": "PRB-0019"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0005",
+      "business_types": [
+        "BUT-0005"
+      ],
+      "keywords": [
+        "midweek",
+        "quiet tuesday",
+        "who came in",
+        "last month"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0021",
+      "class": "Problem",
+      "name": "Till, sheet and supplier book disagree",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "family_of",
+          "target_id": "PRB-0010"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0005",
+      "business_types": [
+        "BUT-0005"
+      ],
+      "keywords": [
+        "disagree",
+        "supplier book",
+        "don't match",
+        "don’t match"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0022",
+      "class": "Problem",
+      "name": "Online looks like every other shop",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0005",
+      "business_types": [
+        "BUT-0005"
+      ],
+      "keywords": [
+        "every other shop",
+        "website builder",
+        "looks like every"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0023",
+      "class": "Problem",
+      "name": "Card fees and cashing up eat the evening",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0005",
+      "business_types": [
+        "BUT-0005"
+      ],
+      "keywords": [
+        "card fees",
+        "cashing up",
+        "fees"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0024",
+      "class": "Problem",
+      "name": "No-shows and empty slots (practice)",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "family_of",
+          "target_id": "PRB-0001"
+        },
+        {
+          "type": "family_of",
+          "target_id": "PRB-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0006",
+      "business_types": [
+        "BUT-0006"
+      ],
+      "keywords": [
+        "no-show",
+        "no show",
+        "empty slot",
+        "didn't turn up",
+        "don't turn up"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0025",
+      "class": "Problem",
+      "name": "Recall / “you’re due back” never goes out",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0006",
+      "business_types": [
+        "BUT-0006"
+      ],
+      "keywords": [
+        "recall",
+        "due back",
+        "never send"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0026",
+      "class": "Problem",
+      "name": "Diary, payments and notes in three places",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0006",
+      "business_types": [
+        "BUT-0006"
+      ],
+      "keywords": [
+        "three places",
+        "on paper",
+        "diary in one place",
+        "notes in a third"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0027",
+      "class": "Problem",
+      "name": "New patients can’t book without phoning",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0006",
+      "business_types": [
+        "BUT-0006"
+      ],
+      "keywords": [
+        "phoning",
+        "can't book",
+        "can’t book",
+        "book online",
+        "interrupting"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0028",
+      "class": "Problem",
+      "name": "Reviews unanswered; fear of one bad star",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "family_of",
+          "target_id": "PRB-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0006",
+      "business_types": [
+        "BUT-0006"
+      ],
+      "keywords": [
+        "review",
+        "bad star",
+        "one star"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0029",
+      "class": "Problem",
+      "name": "Quotes take a night and then go cold",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0007",
+      "business_types": [
+        "BUT-0007"
+      ],
+      "keywords": [
+        "quote",
+        "go cold",
+        "quotes"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0030",
+      "class": "Problem",
+      "name": "Diary vs materials vs who is on site",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0007",
+      "business_types": [
+        "BUT-0007"
+      ],
+      "keywords": [
+        "on site",
+        "materials",
+        "didn't show",
+        "rain"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0031",
+      "class": "Problem",
+      "name": "Deposit taken, extras argued later",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0007",
+      "business_types": [
+        "BUT-0007"
+      ],
+      "keywords": [
+        "deposit",
+        "extras",
+        "argued"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0032",
+      "class": "Problem",
+      "name": "Photos trapped on the phone",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0007",
+      "business_types": [
+        "BUT-0007"
+      ],
+      "keywords": [
+        "photos",
+        "pictures"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "PRB-0033",
+      "class": "Problem",
+      "name": "No idea which jobs made money",
+      "owner": "Architecture Office",
+      "status": "Registered",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-08",
+      "source_document": "BUT-0007",
+      "business_types": [
+        "BUT-0007"
+      ],
+      "keywords": [
+        "made money",
+        "profit",
+        "which jobs"
+      ],
+      "owner_words": null
+    },
+    {
+      "id": "HVT-0006-OVL-0002",
+      "class": "Document",
+      "name": "BUT-0002 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0002"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0002"
+    },
+    {
+      "id": "HVT-0006-OVL-0003",
+      "class": "Document",
+      "name": "BUT-0003 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0003"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0003"
+    },
+    {
+      "id": "HVT-0006-OVL-0004",
+      "class": "Document",
+      "name": "BUT-0004 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0004"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0004"
+    },
+    {
+      "id": "HVT-0006-OVL-0005",
+      "class": "Document",
+      "name": "BUT-0005 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0005"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0005"
+    },
+    {
+      "id": "HVT-0006-OVL-0006",
+      "class": "Document",
+      "name": "BUT-0006 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0006"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0006"
+    },
+    {
+      "id": "HVT-0006-OVL-0007",
+      "class": "Document",
+      "name": "BUT-0007 capability overlay",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "BUT-0007"
+        },
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0006"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-OVL-0007"
+    },
+    {
+      "id": "HVT-0006-Q-0001",
+      "class": "Document",
+      "name": "BusinessType index — BUT-0001…0007",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-10",
+      "source_document": "HVT-0006-Q-0001"
+    },
+    {
+      "id": "SES-0002",
+      "class": "Document",
+      "name": "Ladder script — dry run on BUT-0001",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DOC-0008"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-03",
+      "source_document": "SES-0002"
+    },
+    {
+      "id": "SES-0003",
+      "class": "Document",
+      "name": "Live Build Session — blank form (not run)",
+      "owner": "Architecture Office",
+      "status": "Approved",
+      "version": "1.0",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "DOC-0008"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-03",
+      "source_document": "SES-0003"
+    },
+    {
+      "id": "WL-2026-09-04-01",
+      "class": "Document",
+      "name": "Working list — agents and queued BusinessTypes",
+      "owner": "Architecture Office",
+      "status": "Superseded",
+      "version": "0.2",
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target_id": "HVT-0002"
+        }
+      ],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-06",
+      "source_document": "WL-2026-09-04-01"
+    },
+    {
+      "id": "SES-0002-F-0001",
+      "class": "Customer Session",
+      "name": "THEATRE — fictional ‘Mina, Parade Cut’ dry run",
+      "owner": "Architecture Office",
+      "status": "Closed",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "DR-2026-11-20-03",
+      "source_document": "SES-0002-F-0001",
+      "project_id_or_business_type_id": "BUT-0001",
+      "date": "2026-09-05",
+      "template": true,
+      "theatre": true,
+      "notes": "Filed theatre record — not a customer record, not a customer asset."
+    },
+    {
+      "id": "DR-2026-09-25-07",
+      "class": "Decision",
+      "name": "HVT Foundry Studio (action map)",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-25-07"
+    },
+    {
+      "id": "DR-2026-09-26-08",
+      "class": "Decision",
+      "name": "Studio v0.2 — live search, shop apps, connectors",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-26-08"
+    },
+    {
+      "id": "DR-2026-09-26-09",
+      "class": "Decision",
+      "name": "Salon / Barber card app template",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-09-26-09"
+    },
+    {
+      "id": "DR-2026-10-18-01",
+      "class": "Decision",
+      "name": "Founder approval (18 Oct 2026)",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-10-18-01"
+    },
+    {
+      "id": "DR-2026-11-20-01",
+      "class": "Decision",
+      "name": "Authority for completion; CEO Office approver identity",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-01"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-01",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-02",
+      "class": "Decision",
+      "name": "Exception EXC-2026-11-20-01 — Chief Architect + QA cover",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-02"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-02",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-03",
+      "class": "Decision",
+      "name": "APPROVED DOC-0008; SES-0002 filed; SES-0003 unblocked",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-03"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-03",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-04",
+      "class": "Decision",
+      "name": "Sign off DR-10a + OVL-0001; close DR-11; retire DR-13",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-04"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-04",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-05",
+      "class": "Decision",
+      "name": "ENG-0005 path A — authorised on trigger; Pronto not registered",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-05"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-05",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-06",
+      "class": "Decision",
+      "name": "Job A — HVT-0002 v1.0; HVT-0001 v1.3 Art. XIV.6",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-06"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-06",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-07",
+      "class": "Decision",
+      "name": "Job B — HVT-0004 v1.0",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-07"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-07",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-08",
+      "class": "Decision",
+      "name": "HVT-0006 v1.0 — IDs minted",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-08"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-08",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-09",
+      "class": "Decision",
+      "name": "HVT-0007 v1.0 — catalog decisions",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-09"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-09",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-10",
+      "class": "Decision",
+      "name": "BUT-0002…0007 v1.0; overlays OVL-0002…0007",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-10"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-10",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-11",
+      "class": "Decision",
+      "name": "Studio approvals; Job D — ENG-0004 built and run",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-11"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-11",
+      "document_status": "Approved"
+    },
+    {
+      "id": "DR-2026-11-20-12",
+      "class": "Decision",
+      "name": "Completion record",
+      "owner": "Architecture Office",
+      "status": "Logged",
+      "version": "1.0",
+      "relationships": [],
+      "dependencies": [],
+      "approvals": [
+        {
+          "approver": "Tony Adams (Raj), CEO Office",
+          "date": "2026-11-20",
+          "decision_ref": "DR-2026-11-20-12"
+        }
+      ],
+      "change_history": [],
+      "authority": "HVT-0001 Art. V",
+      "source_document": "DR-2026-11-20-12",
+      "document_status": "Approved"
+    }
+  ]
+}

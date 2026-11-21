@@ -1,0 +1,994 @@
+{
+ "card_id": "CARD-HAIR-01",
+ "title": "Hair Salon / Barber",
+ "business_type_id": "BUT-0001",
+ "business_type_name": "Hair Salon",
+ "version": "0.2",
+ "status": "Draft — written 18 Oct 2026, awaiting the founder's look and Chief Architect review (role vacant)",
+ "authority": "DR-2026-09-26-09 (Draft)",
+ "record_note": "Barber is handled as a variant of BUT-0001 Hair Salon. There is no separate Barber BusinessType in the record; that is flagged in OPEN_ITEMS, not invented here.",
+ "variants": [
+  {
+   "id": "salon",
+   "label": "Hair salon",
+   "staff_word": "Stylist",
+   "staff_word_plural": "Stylists"
+  },
+  {
+   "id": "barber",
+   "label": "Barber shop",
+   "staff_word": "Barber",
+   "staff_word_plural": "Barbers"
+  }
+ ],
+ "presets": [
+  {
+   "id": "luxury",
+   "label": "Luxury salon",
+   "variant": "salon",
+   "description": "Deep aubergine and champagne gold, elegant serif headings, soft curves.",
+   "colours": {
+    "primary": "#2B1B2E",
+    "accent": "#C9A66B",
+    "bg": "#F7F1EA",
+    "text": "#231621",
+    "surface": "#FFFDF9"
+   },
+   "font_display": "Didot, 'Bodoni 72', 'Bodoni MT', 'Playfair Display', 'Times New Roman', serif",
+   "font_body": "'Avenir Next', Avenir, 'Segoe UI', system-ui, sans-serif",
+   "pattern": "arches",
+   "radius": "22px"
+  },
+  {
+   "id": "urban_barber",
+   "label": "Urban barber",
+   "variant": "barber",
+   "description": "Charcoal and concrete with a hot signal red, bold condensed type, sharp edges.",
+   "colours": {
+    "primary": "#141414",
+    "accent": "#E63B2E",
+    "bg": "#EDEBE7",
+    "text": "#111111",
+    "surface": "#FFFFFF"
+   },
+   "font_display": "'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue Condensed', Impact, sans-serif",
+   "font_body": "'Helvetica Neue', Arial, system-ui, sans-serif",
+   "pattern": "stripes",
+   "radius": "4px"
+  },
+  {
+   "id": "textured",
+   "label": "Afro & textured hair specialist",
+   "variant": "salon",
+   "description": "Warm terracotta, gold and deep green with a woven geometric pattern.",
+   "colours": {
+    "primary": "#7A2E1D",
+    "accent": "#E0A526",
+    "bg": "#FBF3E8",
+    "text": "#2A1810",
+    "surface": "#FFFFFF"
+   },
+   "font_display": "'Avenir Next', 'Futura', 'Century Gothic', 'Trebuchet MS', sans-serif",
+   "font_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+   "pattern": "weave",
+   "radius": "16px"
+  },
+  {
+   "id": "heritage_classic",
+   "label": "Heritage — classic British barbershop",
+   "variant": "barber",
+   "description": "Bottle green, cream and brass; traditional serif; pinstripe details.",
+   "colours": {
+    "primary": "#1F3B2D",
+    "accent": "#B8893B",
+    "bg": "#F4EEDF",
+    "text": "#1B1B16",
+    "surface": "#FFFCF3"
+   },
+   "font_display": "Georgia, 'Iowan Old Style', 'Palatino Linotype', serif",
+   "font_body": "Georgia, 'Iowan Old Style', serif",
+   "pattern": "pinstripe",
+   "radius": "8px"
+  },
+  {
+   "id": "heritage_med",
+   "label": "Heritage — Mediterranean & Middle Eastern barber",
+   "variant": "barber",
+   "description": "Deep teal-blue, sand and copper with a tile-star pattern.",
+   "colours": {
+    "primary": "#0F3D4C",
+    "accent": "#C8703A",
+    "bg": "#F5EDE1",
+    "text": "#10242B",
+    "surface": "#FFFFFF"
+   },
+   "font_display": "'Gill Sans', 'Gill Sans MT', 'Segoe UI', system-ui, sans-serif",
+   "font_body": "'Segoe UI', system-ui, sans-serif",
+   "pattern": "tiles",
+   "radius": "12px"
+  },
+  {
+   "id": "heritage_south_asian",
+   "label": "Heritage — South Asian salon",
+   "variant": "salon",
+   "description": "Rich magenta and marigold with a fine paisley-inspired line pattern.",
+   "colours": {
+    "primary": "#6D1142",
+    "accent": "#F2A900",
+    "bg": "#FFF6EC",
+    "text": "#2B0F1E",
+    "surface": "#FFFFFF"
+   },
+   "font_display": "'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif",
+   "font_body": "'Segoe UI', system-ui, sans-serif",
+   "pattern": "paisley",
+   "radius": "18px"
+  }
+ ],
+ "service_options": {
+  "audiences": [
+   [
+    "anyone",
+    "Anyone"
+   ],
+   [
+    "women",
+    "Women"
+   ],
+   [
+    "men",
+    "Men"
+   ],
+   [
+    "children",
+    "Children"
+   ]
+  ],
+  "hair_types": [
+   [
+    "straight",
+    "Straight"
+   ],
+   [
+    "wavy",
+    "Wavy"
+   ],
+   [
+    "curly",
+    "Curly"
+   ],
+   [
+    "coily",
+    "Coily / Afro"
+   ],
+   [
+    "locs",
+    "Locs"
+   ],
+   [
+    "any",
+    "Any hair type"
+   ]
+  ],
+  "service_categories": [
+   "Cuts",
+   "Colour",
+   "Styling",
+   "Treatments",
+   "Braids & locs",
+   "Beard & shave",
+   "Kids",
+   "Bridal & events"
+  ]
+ },
+ "booking_defaults": {
+  "slot_minutes": 15,
+  "buffer_minutes": 0,
+  "min_notice_minutes": 60,
+  "max_days_ahead": 60,
+  "hold_minutes": 10,
+  "late_cancel_hours": 24,
+  "no_show_grace_minutes": 15,
+  "deposit_after_no_shows": 1,
+  "patch_test_gap_hours": 48,
+  "long_service_minutes": 180,
+  "buffer_may_pass_closing": 1,
+  "reminder_hours": 24
+ },
+ "supplier_search": {
+  "osm_tags": [
+   "shop=hairdresser_supply",
+   "shop=wholesale"
+  ],
+  "web_phrases": [
+   "hair and beauty wholesaler near {area}",
+   "salon supplies wholesale {area}",
+   "barber supplies wholesaler UK",
+   "professional hair products trade account UK"
+  ]
+ },
+ "modules": [
+  {
+   "id": "hero",
+   "tier": "base",
+   "name": "Hero with photos",
+   "locked": false,
+   "description": "Big opening screen with the shop's own photos (or a generated pattern if none), name, tagline and a Book button.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "services",
+   "tier": "base",
+   "name": "Services & price list",
+   "description": "Categories, durations, 'from' prices, who it's for (women/men/children) and hair types. Filter chips for customers.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "services",
+   "needs_server": false
+  },
+  {
+   "id": "booking_request",
+   "tier": "base",
+   "name": "Online booking request",
+   "description": "Customer picks a service, stylist (or anyone) and a time inside opening hours. The shop confirms it in the admin page. Includes an 'add to calendar' (.ics) file. With no always-on server, the same form sends the request by WhatsApp instead (it says clearly that this is a request, not a booking).",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "bookings",
+   "engine": "booking",
+   "needs_server": true
+  },
+  {
+   "id": "staff",
+   "tier": "base",
+   "name": "Stylist / barber profiles",
+   "description": "Photo (optional), role, short bio and specialities for each team member.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "staff",
+   "needs_server": false
+  },
+  {
+   "id": "gallery",
+   "tier": "base",
+   "name": "Gallery",
+   "description": "The shop's own photos of work and the salon.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "gallery",
+   "needs_server": false
+  },
+  {
+   "id": "reviews",
+   "tier": "base",
+   "name": "Reviews + 'leave a Google review'",
+   "description": "Shows reviews the owner copies in (with where they came from) and a button to Google's own write-a-review page for the shop. Needs the shop's Google place ID, no key.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "reviews",
+   "needs_server": false
+  },
+  {
+   "id": "contact_bar",
+   "tier": "base",
+   "name": "WhatsApp, call and directions buttons",
+   "description": "Sticky buttons on the phone screen: WhatsApp chat, call, and directions in the customer's map app.",
+   "status": "working",
+   "connectors": [
+    "whatsapp_link"
+   ],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "hours",
+   "tier": "base",
+   "name": "Opening hours",
+   "description": "Week view with 'open now' and special closed dates.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "map",
+   "tier": "base",
+   "name": "Location map",
+   "description": "OpenStreetMap map of the shop (from the postcode) with a directions link.",
+   "status": "working",
+   "connectors": [
+    "postcodes_io"
+   ],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "offers",
+   "tier": "base",
+   "name": "Offers banner",
+   "description": "One line offer at the top, switched on/off from the admin page.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "languages",
+   "tier": "base",
+   "name": "Multi-language (incl. right-to-left)",
+   "description": "Up to four languages; Arabic, Farsi, Urdu, Pashto and Kurdish (Sorani) show right-to-left. Screen words are drafted for English, Romanian, Polish, Arabic, Turkish, Urdu and French and should be checked by a native speaker.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "install",
+   "tier": "base",
+   "name": "Install to home screen",
+   "description": "Works as an app on the phone (PWA) and shows saved info when offline.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "admin",
+   "tier": "base",
+   "name": "Owner admin page",
+   "locked": true,
+   "description": "Password-protected page to edit everything, switch modules on/off and see bookings. Keys are stored on the shop's computer only and never exported.",
+   "status": "working",
+   "connectors": [],
+   "public": false,
+   "needs_server": false
+  },
+  {
+   "id": "deposits",
+   "tier": "optional",
+   "name": "Deposits / pay online",
+   "description": "Ask for a deposit when booking (per service, or after a no-show). The time is HELD for 10 minutes while the client pays. Paid in time = confirmed; declined or no answer = released. A payment that arrives late is re-checked: if the time has gone, it is marked 'refund due' and the owner is alerted. Payment firms: Stripe, Square or SumUp (the owner's own account and key). The owner can also mark a deposit paid by hand. With no firm connected, the booking becomes a request and the shop takes the deposit itself.",
+   "status": "code-ready-needs-key",
+   "connectors": [
+    "stripe",
+    "square",
+    "sumup"
+   ],
+   "public": true,
+   "admin_tab": "payments",
+   "parts": [
+    [
+     "Owner's own fixed pay link per service",
+     "working"
+    ],
+    [
+     "Held slot, expiry, late-payment re-check, refund alert",
+     "working"
+    ],
+    [
+     "Owner marks deposit paid by hand",
+     "working"
+    ],
+    [
+     "Stripe deposit links + signed webhook",
+     "code-ready-needs-key"
+    ],
+    [
+     "Square deposit links + signed webhook",
+     "code-ready-needs-key"
+    ],
+    [
+     "SumUp hosted checkout + status check",
+     "code-ready-needs-key"
+    ]
+   ],
+   "needs_server": true
+  },
+  {
+   "id": "auto_booking",
+   "tier": "optional",
+   "name": "Automated booking (per-stylist availability)",
+   "description": "Customers see real free times for each stylist (their own days, hours, breaks and days off) and are confirmed instantly, or held for a deposit. Double bookings are impossible: checked under one lock on one server. Handles clean-up buffers, flexible breaks for long services, and processing time (a stylist can do a quick trim while a colour develops).",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "bookings",
+   "engine": "booking",
+   "replaces": "booking_request",
+   "needs_server": true
+  },
+  {
+   "id": "reminders",
+   "tier": "optional",
+   "name": "Reminders (WhatsApp / SMS)",
+   "description": "Reminders ready to send the day before at the same London clock time (right across the clock changes). One tap opens WhatsApp with the message filled in. With a Twilio key they can go as SMS from the admin page. Nothing is sent without the owner pressing send.",
+   "status": "working",
+   "connectors": [
+    "whatsapp_link",
+    "twilio_sms"
+   ],
+   "public": false,
+   "admin_tab": "reminders",
+   "parts": [
+    [
+     "WhatsApp message links",
+     "working"
+    ],
+    [
+     "SMS via Twilio",
+     "code-ready-needs-key"
+    ]
+   ],
+   "needs_server": true
+  },
+  {
+   "id": "gcal",
+   "tier": "optional",
+   "name": "Google Calendar sync",
+   "description": "Puts confirmed bookings into the salon's Google Calendar. Until keys are added, every booking has a free .ics 'add to calendar' file.",
+   "status": "code-ready-needs-key",
+   "connectors": [
+    "google_calendar"
+   ],
+   "public": false,
+   "admin_tab": "bookings",
+   "parts": [
+    [
+     ".ics add-to-calendar files",
+     "working"
+    ],
+    [
+     "Google Calendar push",
+     "code-ready-needs-key"
+    ]
+   ],
+   "needs_server": true
+  },
+  {
+   "id": "platform_links",
+   "tier": "optional",
+   "name": "Fresha / Treatwell / Booksy links",
+   "description": "Buttons that open the shop's own page on these booking platforms. Link-out only: none of them offers a public booking API we could verify (Fresha states no public API; Treatwell and Booksy partner APIs not verified).",
+   "status": "link-only",
+   "connectors": [],
+   "public": true,
+   "cost_notes": [
+    {
+     "text": "Price not checked — each platform charges its own fees.",
+     "url": "",
+     "checked": null
+    }
+   ],
+   "needs_server": false
+  },
+  {
+   "id": "loyalty",
+   "tier": "optional",
+   "name": "Loyalty stamp card",
+   "description": "e.g. every 6th visit free. Each card has a code; customers can check their stamps in the app.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "loyalty",
+   "engine": "loyalty",
+   "needs_server": true
+  },
+  {
+   "id": "vouchers",
+   "tier": "optional",
+   "name": "Gift vouchers",
+   "description": "Issue vouchers with a code and balance, spend over several visits, customers check the balance in the app. Selling online uses the Deposits pay link if switched on.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "vouchers",
+   "engine": "vouchers",
+   "needs_server": true
+  },
+  {
+   "id": "packages",
+   "tier": "optional",
+   "name": "Memberships & packages",
+   "description": "Prepaid bundles like '5 beard trims' or a monthly blow-dry club, with visits counted down.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "packages",
+   "engine": "packages",
+   "needs_server": true
+  },
+  {
+   "id": "retail",
+   "tier": "optional",
+   "name": "Product shop (retail hair products)",
+   "description": "Sell shampoos, oils and styling products: stock counts, low-stock warnings, barcode lookup (Open Beauty Facts, free, no key), reserve by WhatsApp or pay link.",
+   "status": "working",
+   "connectors": [
+    "open_beauty_facts",
+    "open_food_facts"
+   ],
+   "public": true,
+   "admin_tab": "products",
+   "engine": "retail",
+   "needs_server": true
+  },
+  {
+   "id": "walkin_queue",
+   "tier": "optional",
+   "name": "Walk-in queue board",
+   "description": "Customers join from their phone or at the counter. Waits are worked out from each person's own service time and any booked appointments in the same chairs. A free barber calls the first person they can serve. Skipped once = back 2 places; twice = off the list. One place per phone; joining stops when it would finish after closing. The big screen shows first names only; a phone that loses signal shows its last answer and when it was checked.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "queue",
+   "engine": "walkin",
+   "needs_server": true
+  },
+  {
+   "id": "before_after",
+   "tier": "optional",
+   "name": "Before / after gallery",
+   "description": "Side-by-side photos. The owner must tick that the client agreed to the photo being shown.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "gallery",
+   "needs_server": false
+  },
+  {
+   "id": "client_records",
+   "tier": "optional",
+   "name": "Client notes, allergy & patch-test record",
+   "description": "Private notes per client, allergies and patch tests with retest dates. Kept on the shop's own computer only; allergy details need the client's consent tick (UK GDPR special category data). Export or erase a client on request. When on, services marked 'needs patch test' can only be booked if a clear patch test is recorded at least 48 hours before (the owner sets the gap).",
+   "status": "working",
+   "connectors": [],
+   "public": false,
+   "admin_tab": "clients",
+   "engine": "clients",
+   "needs_server": true
+  },
+  {
+   "id": "rota",
+   "tier": "optional",
+   "name": "Staff rota & commission tracker",
+   "description": "Weekly shifts per person and commission at the rates the owner sets, from takings entered or completed bookings.",
+   "status": "working",
+   "connectors": [],
+   "public": false,
+   "admin_tab": "rota",
+   "engine": "rota",
+   "needs_server": true
+  },
+  {
+   "id": "review_requests",
+   "tier": "optional",
+   "name": "Review requests after a visit",
+   "description": "When a booking is marked done, a ready message with the Google review link: WhatsApp tap-to-send, or SMS with a Twilio key.",
+   "status": "working",
+   "connectors": [
+    "whatsapp_link",
+    "twilio_sms"
+   ],
+   "public": false,
+   "admin_tab": "reminders",
+   "parts": [
+    [
+     "WhatsApp message links",
+     "working"
+    ],
+    [
+     "SMS via Twilio",
+     "code-ready-needs-key"
+    ]
+   ],
+   "needs_server": false
+  },
+  {
+   "id": "social_links",
+   "tier": "optional",
+   "name": "Instagram / TikTok links",
+   "description": "Buttons to the shop's own Instagram and TikTok pages (no feed embedding, no login).",
+   "status": "link-only",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "referrals",
+   "tier": "optional",
+   "name": "Referral codes",
+   "description": "Give a client a code to share; new clients enter it when booking; the owner sees who to reward.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "referrals",
+   "engine": "referrals",
+   "needs_server": true
+  },
+  {
+   "id": "multi_branch",
+   "tier": "optional",
+   "name": "Multi-branch",
+   "description": "More than one address, each with its own hours and team; customers choose the branch when booking.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "admin_tab": "branches",
+   "needs_server": false
+  },
+  {
+   "id": "accessibility",
+   "tier": "optional",
+   "name": "Accessibility options",
+   "description": "Customer buttons for bigger text, high contrast and less motion, plus the owner's access info (step-free, quiet appointments…).",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "policy",
+   "tier": "optional",
+   "name": "Cancellation policy / no-show fee text",
+   "description": "The shop's policy shown at booking with a tick box. Text only; charging a fee needs the Deposits module.",
+   "status": "working",
+   "connectors": [],
+   "public": true,
+   "needs_server": false
+  },
+  {
+   "id": "analytics",
+   "tier": "optional",
+   "name": "Analytics dashboard (local counts)",
+   "description": "Counts of app opens, booking requests and button taps per day, kept on the shop's computer. No cookies, no personal data.",
+   "status": "working",
+   "connectors": [],
+   "public": false,
+   "admin_tab": "analytics",
+   "engine": "analytics",
+   "needs_server": true
+  },
+  {
+   "id": "supplier_finder",
+   "tier": "optional",
+   "name": "Supplier finder (salon wholesalers)",
+   "description": "Live web and map search for hair and beauty wholesalers near the shop (OpenStreetMap shop=hairdresser_supply). Every result is labelled 'found live, not checked by us'.",
+   "status": "working",
+   "connectors": [
+    "postcodes_io",
+    "overpass_osm",
+    "brave_search",
+    "duckduckgo"
+   ],
+   "public": false,
+   "admin_tab": "suppliers",
+   "needs_server": true
+  }
+ ],
+ "content_schema": {
+  "services": [
+   {
+    "key": "name",
+    "label": "Service name",
+    "type": "ml_text",
+    "required": true
+   },
+   {
+    "key": "category",
+    "label": "Category",
+    "type": "choice_or_text",
+    "options_from": "service_categories"
+   },
+   {
+    "key": "duration_min",
+    "label": "Minutes",
+    "type": "int",
+    "min": 5,
+    "max": 600,
+    "default": 30
+   },
+   {
+    "key": "price_from",
+    "label": "From price (£)",
+    "type": "money"
+   },
+   {
+    "key": "price_note",
+    "label": "Price note",
+    "type": "ml_text"
+   },
+   {
+    "key": "audience",
+    "label": "Who for",
+    "type": "choice",
+    "options_from": "audiences",
+    "default": "anyone"
+   },
+   {
+    "key": "hair_types",
+    "label": "Hair types",
+    "type": "multichoice",
+    "options_from": "hair_types"
+   },
+   {
+    "key": "segments",
+    "label": "Processing time (optional), e.g. 45 active, 45 processing, 30 active",
+    "type": "text"
+   },
+   {
+    "key": "needs_patch_test",
+    "label": "Needs a patch test first",
+    "type": "bool",
+    "default": false
+   },
+   {
+    "key": "staff_ids",
+    "label": "Who can do it (empty = everyone)",
+    "type": "staff_refs"
+   },
+   {
+    "key": "deposit",
+    "label": "Deposit (£, Deposits module)",
+    "type": "money"
+   },
+   {
+    "key": "pay_link",
+    "label": "Owner's pay link (https://…)",
+    "type": "url"
+   },
+   {
+    "key": "description",
+    "label": "Short description",
+    "type": "ml_text"
+   }
+  ],
+  "staff": [
+   {
+    "key": "name",
+    "label": "Name",
+    "type": "text",
+    "required": true
+   },
+   {
+    "key": "role",
+    "label": "Role",
+    "type": "ml_text"
+   },
+   {
+    "key": "bio",
+    "label": "Short bio",
+    "type": "ml_text"
+   },
+   {
+    "key": "specialities",
+    "label": "Specialities (comma separated)",
+    "type": "tags"
+   },
+   {
+    "key": "photo",
+    "label": "Photo",
+    "type": "image"
+   },
+   {
+    "key": "branch",
+    "label": "Branch id (multi-branch)",
+    "type": "text"
+   },
+   {
+    "key": "walk_ins",
+    "label": "Takes walk-ins",
+    "type": "bool",
+    "default": true
+   },
+   {
+    "key": "bookable",
+    "label": "Bookable online",
+    "type": "bool",
+    "default": true
+   },
+   {
+    "key": "breaks",
+    "label": "Breaks, e.g. 13:00-13:30",
+    "type": "breaks"
+   },
+   {
+    "key": "break_flexible",
+    "label": "Break can move during long services (3 hours+)",
+    "type": "bool",
+    "default": true
+   },
+   {
+    "key": "days_off",
+    "label": "Days off (YYYY-MM-DD, comma separated)",
+    "type": "tags"
+   },
+   {
+    "key": "commission",
+    "label": "Commission % (service / retail)",
+    "type": "commission"
+   }
+  ],
+  "gallery": [
+   {
+    "key": "image",
+    "label": "Photo",
+    "type": "image",
+    "required": true
+   },
+   {
+    "key": "caption",
+    "label": "Caption",
+    "type": "ml_text"
+   }
+  ],
+  "before_after": [
+   {
+    "key": "before",
+    "label": "Before photo",
+    "type": "image",
+    "required": true
+   },
+   {
+    "key": "after",
+    "label": "After photo",
+    "type": "image",
+    "required": true
+   },
+   {
+    "key": "caption",
+    "label": "Caption",
+    "type": "ml_text"
+   },
+   {
+    "key": "consent",
+    "label": "Client agreed to these photos being shown",
+    "type": "bool",
+    "required_true": true
+   }
+  ],
+  "reviews": [
+   {
+    "key": "author",
+    "label": "Name as shown on the review",
+    "type": "text",
+    "required": true
+   },
+   {
+    "key": "stars",
+    "label": "Stars",
+    "type": "int",
+    "min": 1,
+    "max": 5,
+    "default": 5
+   },
+   {
+    "key": "text",
+    "label": "Review text",
+    "type": "text_long",
+    "required": true
+   },
+   {
+    "key": "source",
+    "label": "Where it came from (e.g. Google, 2026-09-01)",
+    "type": "text",
+    "required": true
+   }
+  ],
+  "packages": [
+   {
+    "key": "name",
+    "label": "Package name",
+    "type": "ml_text",
+    "required": true
+   },
+   {
+    "key": "uses",
+    "label": "Number of visits",
+    "type": "int",
+    "min": 1,
+    "max": 100,
+    "default": 5
+   },
+   {
+    "key": "price",
+    "label": "Price (£)",
+    "type": "money"
+   },
+   {
+    "key": "valid_days",
+    "label": "Valid for (days)",
+    "type": "int",
+    "min": 7,
+    "max": 1100,
+    "default": 365
+   },
+   {
+    "key": "pay_link",
+    "label": "Owner's pay link (https://…)",
+    "type": "url"
+   }
+  ],
+  "products": [
+   {
+    "key": "name",
+    "label": "Product",
+    "type": "ml_text",
+    "required": true
+   },
+   {
+    "key": "brand",
+    "label": "Brand",
+    "type": "text"
+   },
+   {
+    "key": "size",
+    "label": "Size",
+    "type": "text"
+   },
+   {
+    "key": "price",
+    "label": "Price (£)",
+    "type": "money"
+   },
+   {
+    "key": "barcode",
+    "label": "Barcode",
+    "type": "barcode"
+   },
+   {
+    "key": "low_stock",
+    "label": "Warn when stock is at or below",
+    "type": "int",
+    "min": 0,
+    "max": 999,
+    "default": 2
+   },
+   {
+    "key": "image",
+    "label": "Photo",
+    "type": "image"
+   },
+   {
+    "key": "pay_link",
+    "label": "Owner's pay link (https://…)",
+    "type": "url"
+   }
+  ],
+  "branches": [
+   {
+    "key": "name",
+    "label": "Branch name",
+    "type": "text",
+    "required": true
+   },
+   {
+    "key": "address",
+    "label": "Address",
+    "type": "text"
+   },
+   {
+    "key": "postcode",
+    "label": "Postcode",
+    "type": "text"
+   },
+   {
+    "key": "phone",
+    "label": "Phone",
+    "type": "text"
+   }
+  ]
+ },
+ "status_key": {
+  "working": "Works now, tested here.",
+  "code-ready-needs-key": "Code written against the firm's official documents; needs the owner's own key; not run here against the real service.",
+  "link-only": "Opens the shop's own page elsewhere; no data is exchanged.",
+  "needs-server": "Only works while the shop's app server is running (hosted or on a shop PC). Without one, the app falls back to a WhatsApp request."
+ }
+}
